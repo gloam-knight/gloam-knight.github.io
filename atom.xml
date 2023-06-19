@@ -6,7 +6,7 @@
   <link href="https://gloam-knight.github.io/atom.xml" rel="self"/>
   
   <link href="https://gloam-knight.github.io/"/>
-  <updated>2023-06-04T04:59:00.439Z</updated>
+  <updated>2023-06-15T05:33:48.769Z</updated>
   <id>https://gloam-knight.github.io/</id>
   
   <author>
@@ -17,15 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>江夏</title>
-    <link href="https://gloam-knight.github.io/2023/06/04/%E6%B1%9F%E5%A4%8F/"/>
-    <id>https://gloam-knight.github.io/2023/06/04/%E6%B1%9F%E5%A4%8F/</id>
+    <title></title>
+    <link href="https://gloam-knight.github.io/2023/06/19/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
+    <id>https://gloam-knight.github.io/2023/06/19/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</id>
+    <published>2023-06-19T13:50:54.338Z</published>
+    <updated>2023-06-15T05:33:48.769Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;信息收集&quot;&gt;&lt;a href=&quot;#信息收集&quot; class=&quot;headerlink&quot; title=&quot;信息收集&quot;&gt;&lt;/a&gt;信息收集&lt;/h1&gt;&lt;p&gt;#知识点：&lt;/p&gt;
+&lt;p&gt;1、打点-Web架构-语言&amp;amp;中间件&amp;amp;数据库&amp;amp;系统等&lt;/p&gt;
+&lt;p&gt;2、打点</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>云计算</title>
+    <link href="https://gloam-knight.github.io/2023/06/04/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
+    <id>https://gloam-knight.github.io/2023/06/04/%E4%BA%91%E8%AE%A1%E7%AE%97/</id>
     <published>2023-06-04T04:59:00.000Z</published>
-    <updated>2023-06-04T04:59:00.439Z</updated>
+    <updated>2023-06-08T16:46:03.825Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;云计算的公共特征：&quot;&gt;&lt;a href=&quot;#云计算的公共特征：&quot; class=&quot;headerlink&quot; title=&quot;云计算的公共特征：&quot;&gt;&lt;/a&gt;云计算的公共特征：&lt;/h4&gt;&lt;p&gt;1．弹性伸缩 2．快速部署 3．资源抽象 4．按用量收费 5．宽带访问&lt;/p&gt;
+&lt;h</summary>
+      
     
     
     
     
+    <category term="元计算" scheme="https://gloam-knight.github.io/tags/%E5%85%83%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
