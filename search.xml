@@ -1,8 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Python安装</title>
+    <url>/2023/06/20/Python%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h1 id="Python安装"><a href="#Python安装" class="headerlink" title="Python安装"></a>Python安装</h1><p>因为有些工具只能用python2，而有的工具得用python3运行。所以我准备在win10里同时装这两个，而且CSDN上也正好有这类的文章。但是！，可能因为时效性，安装过程中出了大大小小的问题，就没有成功，就很烦! </p>
+<p>最近刚把电脑系统重装完，也把python2和python3下载好了。下面记录一下我安装的过程。</p>
+<p>1、打开<a href="http://www.python.org进入官网下载，点击Downloads->Windows">www.python.org进入官网下载，点击Downloads-&gt;Windows</a></p>
+<p><img src="/../image%5Cimage-20230622190955743.png" alt="image-20230622190955743"></p>
+<p>然后就可以看到版本信息了</p>
+<p><img src="/../image%5Cimage-20230622192032268.png" alt="image-20230622192032268"></p>
+<p>2、先下载python27</p>
+<p><img src="/../image%5Cimage-20230622192319275.png" alt="image-20230622192319275"></p>
+<p>也可以下载python2其他版本</p>
+<p>3、然后点击安装[具体内容CSDN大量文章]</p>
+<p>Install for aii users-&gt;设置存放目录–&gt;无脑next-&gt;finish</p>
+<p>4、配置环境变量[详见CSDN其他作者的文章]</p>
+<p>系统变量里双击path，新建记录，加入下载python的文件路径</p>
+<ol>
+<li>确认Python 2.7已正确安装并已添加到系统的环境变量中。您可以在命令行终端中输入<code>python --version</code>来验证Python 2.7的安装情况。</li>
+</ol>
+<p>5、安装pip（这也是我之前卡死的一步，网上的教程都成功不了）</p>
+<p>下载<code>get-pip.py</code>脚本文件：</p>
+<ul>
+<li><p>在浏览器中打开以下链接：<a href="https://bootstrap.pypa.io/pip/2.7/get-pip.py">https://bootstrap.pypa.io/pip/2.7/get-pip.py</a></p>
+<p><img src="/../image%5Cimage-20230622194355360.png" alt="image-20230622194355360"></p>
+</li>
+<li><p>创建一个空白文本文本，在网页中选择全部内容，复制（Ctrl+C）。</p>
+</li>
+<li><p>将文件保存为get-pip.py</p>
+</li>
+<li><p>打开命令行终端：</p>
+<p>在Windows上，打开命令提示符。</p>
+<p>在命令行中，导航到保存了get-pip.py的目录。</p>
+</li>
+<li><p>运行以下命令来安装pip：</p>
+<p>python2.7 get-pip.py</p>
+<p>（或者命令：python get-pip.py，由安装的python.exe文件决定）</p>
+</li>
+<li><p>验证pip安装是否成功。在命令行中输入以下命令：</p>
+<p>python2.7 -m pip –version</p>
+<p>（python2.7 -m pip –version）</p>
+<p>如果安装成功，将显示pip的版本信息。</p>
+</li>
+</ul>
+<p>6.下载python3，过程和上面差不多，python3自带pip。所以就没有安装python2那么麻烦。</p>
+<p><img src="/../image%5Cimage-20230622200151539.png" alt="image-20230622200151539"></p>
+<p>最后环境变量</p>
+<p><img src="/../image%5Cimage-20230622200256989.png" alt="image-20230622200256989"></p>
+<p>最后输入验证命令，然后就安装完成啦！</p>
+]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Chatgpt报错</title>
+    <url>/2023/06/22/Chatgpt%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<h2 id="Chatgpt无法访问问题"><a href="#Chatgpt无法访问问题" class="headerlink" title="Chatgpt无法访问问题"></a>Chatgpt无法访问问题</h2><p>Chatgpt也算我半个老师了，帮我解决了不少问题。</p>
+<p>某天重装系统，重新下载Google，当登录网站时：</p>
+<p><img src="/../image%5CChatgpt1.png" alt="Chatgpt1.png"></p>
+<h4 id="有问题就解决问题-lt-很乐观-gt"><a href="#有问题就解决问题-lt-很乐观-gt" class="headerlink" title="有问题就解决问题&lt;很乐观&gt;"></a>有问题就解决问题&lt;很乐观&gt;</h4><p>网上查了不少资料，协议不支持，就去加其他协议。</p>
+<p>根据文章所说，勾选了两外三个，结果是失败了。</p>
+<p><img src="/../image%5CChatgpt2.png" alt="Chatgpt2.png"></p>
+<p>有一篇说是TLS 1.2是最新的，所以没道理TLS 1.2不行，那么一定是其他问题</p>
+<h4 id="会不会是节点问题-lt-有点烦躁-gt"><a href="#会不会是节点问题-lt-有点烦躁-gt" class="headerlink" title="会不会是节点问题&lt;有点烦躁&gt;"></a>会不会是节点问题&lt;有点烦躁&gt;</h4><p>clash换了n个节点。。。。。</p>
+<p>甚至尝试了火狐浏览器</p>
+<p>。。。没啥用   (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄</p>
+<h4 id="国内ChatAi-lt-突发奇想-gt"><a href="#国内ChatAi-lt-突发奇想-gt" class="headerlink" title="国内ChatAi&lt;突发奇想&gt;"></a>国内ChatAi&lt;突发奇想&gt;</h4><p>既然国外的AI用不了，那使用国内的吧！</p>
+<p>文心一言暂时没找到，国内ai一大把，随便找了个能用的。</p>
+<h5 id="另一个答案出现了：Google的问题"><a href="#另一个答案出现了：Google的问题" class="headerlink" title="另一个答案出现了：Google的问题"></a>另一个答案出现了：Google的问题</h5><p><img src="/../image%5CChatgpt3.png" alt="Chatgpt3.png"></p>
+<p>果然！</p>
+<p><img src="/../image%5CChatgpt4.png" alt="Chatgpt4.png"></p>
+<p>因为之前下载的时候把文件夹移动到了D盘，我没有先卸载，而是把Google文件夹先放回C盘去了。</p>
+<p>结果：</p>
+<p><img src="/../image%5CChatgpt5.png" alt="Chatgpt5.png"></p>
+<h4 id="问题排除-lt-无语-gt"><a href="#问题排除-lt-无语-gt" class="headerlink" title="问题排除&lt;无语&gt;"></a>问题排除&lt;无语&gt;</h4><p>[此时已经过去1个多小时了，半夜2点，猫头鹰都要睡觉了md]</p>
+<p>国内ai问不出啥，文章找不到类似的，只好询问群友。</p>
+<p>无人应答————</p>
+<p>无法入睡————</p>
+<p>迷迷糊糊(￣o￣) . z Z  . z Z  . z Z</p>
+<h4 id="问题莫名解决"><a href="#问题莫名解决" class="headerlink" title="问题莫名解决"></a>问题莫名解决</h4><p>7点醒来，翻开群聊，无人应答。</p>
+<p>打开电脑，打开clash，打开网站</p>
+<p>6</p>
+<p>又可以登进去了。</p>
+<p>[烦]</p>
+]]></content>
+      <tags>
+        <tag>疑难</tag>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
-    <url>/2023/06/04/hello-world/</url>
+    <url>/2023/06/19/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -17,6 +107,79 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>信息收集</title>
+    <url>/2023/05/20/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h1><h4 id="1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等"><a href="#1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等" class="headerlink" title="1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等"></a>1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等</h4><h4 id="2-Web源码-CMS开源-amp-闭源售卖-amp-自主研发等"><a href="#2-Web源码-CMS开源-amp-闭源售卖-amp-自主研发等" class="headerlink" title="2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等"></a>2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等</h4><p>web源码：互站网 fofa搜**源码</p>
+<p>一个网站多个域名</p>
+<p>备案查询</p>
+<h4 id="3-Web源码获取-泄露安全-amp-资源监控-amp-其他等"><a href="#3-Web源码获取-泄露安全-amp-资源监控-amp-其他等" class="headerlink" title="3.Web源码获取-泄露安全&amp;资源监控&amp;其他等"></a>3.Web源码获取-泄露安全&amp;资源监控&amp;其他等</h4><h4 id="4-Web域名-子域名-amp-相似域名-amp-反查域名-amp-旁注等"><a href="#4-Web域名-子域名-amp-相似域名-amp-反查域名-amp-旁注等" class="headerlink" title="4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等"></a>4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等</h4><p>#信息点：</p>
+<p>基础信息，系统信息，应用信息，防护信息，人员信息，其他信息等</p>
+<p>#技术点：</p>
+<p>CMS识别，端口扫描，CDN绕过，源码获取，子域名查询，WAF识别，负载均衡识别等</p>
+<p>源码泄漏集合：①composer.json②git源码泄露③svn源码泄露④hg源码泄漏⑤网站备份压缩文件</p>
+<p>⑥WEB-INF&#x2F;web.xml 泄露⑦DS_Store 文件泄露⑧SWP 文件泄露⑨CVS泄露⑩Bzr泄露</p>
+<p>GitHub源码泄漏</p>
+<p>源码泄漏原因：1、从源码本身的特性入口</p>
+<p>2、从管理员不好的习惯入口</p>
+<p>3、从管理员不好的配置入口</p>
+<p>4、从管理员不好的意识入口</p>
+<p>5、从管理员资源信息搜集入口</p>
+<p>[文章]常见的Web源码泄漏漏洞及其利用</p>
+<p><a href="https://www.secpulse.com/archives/124398.html">https://www.secpulse.com/archives/124398.html</a></p>
+<p>相关利用项目：</p>
+<p>CMS识别：<a href="https://www.yunsee.cn/">https://www.yunsee.cn/</a></p>
+<p>备份：敏感目录文件扫描-7kbscan-WebPathBrute</p>
+<p>CVS：<a href="https://github.com/kost/dvcs-ripper">https://github.com/kost/dvcs-ripper</a></p>
+<p>GIT：<a href="https://github.com/lijiejie/GitHack">https://github.com/lijiejie/GitHack</a></p>
+<p>SVN：<a href="https://github.com/callmefeifei/SvnHack">https://github.com/callmefeifei/SvnHack</a></p>
+<p>DS_Store：<a href="https://github.com/lijiejie/ds_store_exp">https://github.com/lijiejie/ds_store_exp</a></p>
+<h4 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h4><p>超级ping：CDN服务识别；超级ping：ping.chinaz.com</p>
+<p>Kali上自带Nmap，Masscan，lbd等项目</p>
+<p>Masscan：端口扫描，应用协议<a href="https://github.com/robertdavidgraham/masscan">https://github.com/robertdavidgraham/masscan</a></p>
+<p>Wafw00f：Web应用防护防火墙识别<a href="https://github.com/EnableSecurity/wafw00f">https://github.com/EnableSecurity/wafw00f</a></p>
+<p>Nmap：端口扫描，应用协议，防火墙识别</p>
+<p>lbd：负载均衡，广域网负载均衡，应用层负载均衡</p>
+<p>[文章]端口协议安全：</p>
+<p><a href="https://www.se7ensec.cn/2018/11/28/%E7%AB%AF%E5%8F%A3%E6%B8%97%E9%80%8F%E6%80%BB%E7%BB%93/">https://www.se7ensec.cn/2018/11/28/%E7%AB%AF%E5%8F%A3%E6%B8%97%E9%80%8F%E6%80%BB%E7%BB%93/</a></p>
+<p>旁注：</p>
+<p>同服务器下面的不同WEB应用查询技术</p>
+<p>（旁注查询）</p>
+<p>C段：</p>
+<p>同网段下面的不同服务器IP下的WEB应用查询技术</p>
+<h4 id="绕过CDN方法"><a href="#绕过CDN方法" class="headerlink" title="绕过CDN方法"></a>绕过CDN方法</h4><p>1.nslook：Win下使用nslookup命令进行查询，若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。</p>
+<p>2.ping查询</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">https://asm.ca.com/en/ping.php/</span><br><span class="line">http://ping.chinaz.com/</span><br><span class="line">https://ping.aizhan.com/</span><br></pre></td></tr></table></figure>
+
+<p>3.工具直接查询</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">http://www.cdnplanet.com/tools/cdnfinder/</span><br><span class="line">https://www.ipip.net/ip.html</span><br></pre></td></tr></table></figure>
+
+<p>[相关文章]<a href="https://zhuanlan.zhihu.com/p/33440472">https://zhuanlan.zhihu.com/p/33440472</a></p>
+<p>[相关文章]<a href="https://www.cnblogs.com/blacksunny/p/5771827.html">https://www.cnblogs.com/blacksunny/p/5771827.html</a></p>
+<p>超级Ping：<a href="https://www.17ce.com/">https://www.17ce.com/</a></p>
+<p>接口查询：<a href="https://get-site-ip.com/">https://get-site-ip.com/</a></p>
+<p>国外请求：<a href="https://tools.ipip.net/cdn.php">https://tools.ipip.net/cdn.php</a></p>
+<p>全网扫描：<a href="https://github.com/Tai7sy/fuckcdn">https://github.com/Tai7sy/fuckcdn</a></p>
+<h4 id="GITHUB资源搜索："><a href="#GITHUB资源搜索：" class="headerlink" title="GITHUB资源搜索："></a>GITHUB资源搜索：</h4><p>in:name test        #仓库标题搜索含有关键字 </p>
+<p>in:descripton test     #仓库描述搜索含有关键字 </p>
+<p>in:readme test       #Readme文件搜素含有关键字 </p>
+<p>stars:&gt;3000 test      #stars数量大于3000的搜索关键字 </p>
+<p>stars:1000..3000 test   #stars数量大于1000小于3000的搜索关键字 forks:&gt;1000 test      #forks数量大于1000的搜索关键字 </p>
+<p>forks:1000..3000 test   #forks数量大于1000小于3000的搜索关键字 size:&gt;&#x3D;5000 test      #指定仓库大于5000k(5M)的搜索关键字 pushed:&gt;2019-02-12 test  #发布时间大于2019-02-12的搜索关键字 created:&gt;2019-02-12 test  #创建时间大于2019-02-12的搜索关键字 user:test         #用户名搜素 </p>
+<p>license:apache-2.0 test  #明确仓库的 LICENSE 搜索关键字 language:java test     #在java语言的代码中搜索关键字 </p>
+<p>user:test in:name test   #组合搜索,用户名test的标题含有test的</p>
+<h4 id="关键字配合谷歌搜索："><a href="#关键字配合谷歌搜索：" class="headerlink" title="关键字配合谷歌搜索："></a>关键字配合谷歌搜索：</h4><p>site:Github.com smtp  </p>
+<p>site:Github.com smtp @qq.com  </p>
+<p>site:Github.com smtp @126.com  </p>
+<p>site:Github.com smtp @163.com  </p>
+<p>site:Github.com smtp @sina.com.cn </p>
+<p>site:Github.com smtp password </p>
+<p>site:Github.com String password smtp</p>
+]]></content>
+      <tags>
+        <tag>信息收集</tag>
+      </tags>
   </entry>
   <entry>
     <title>云计算</title>
@@ -101,66 +264,5 @@
       <tags>
         <tag>元计算</tag>
       </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/06/19/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h1><p>#知识点：</p>
-<p>1、打点-Web架构-语言&amp;中间件&amp;数据库&amp;系统等</p>
-<p>2、打点-Web源码-CMS开源&amp;闭源售卖&amp;自主研发等</p>
-<p>3、打点-Web源码获取-泄露安全&amp;资源监控&amp;其他等</p>
-<p>4、打点-Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等</p>
-<p>#信息点：</p>
-<p>基础信息，系统信息，应用信息，防护信息，人员信息，其他信息等</p>
-<p>#技术点：</p>
-<p>CMS识别，端口扫描，CDN绕过，源码获取，子域名查询，WAF识别，负载均衡识别等</p>
-<p>web源码：互站网 fofa搜**源码</p>
-<p>一个网站多个域名</p>
-<p>备案查询</p>
-<p>源码泄漏集合：</p>
-<p>composer.json</p>
-<p>git源码泄露</p>
-<p>svn源码泄露</p>
-<p>hg源码泄漏</p>
-<p>网站备份压缩文件</p>
-<p>WEB-INF&#x2F;web.xml 泄露</p>
-<p>DS_Store 文件泄露</p>
-<p>SWP 文件泄露</p>
-<p>CVS泄露</p>
-<p>Bzr泄露</p>
-<p>GitHub源码泄漏</p>
-<p>相关利用项目：</p>
-<p>CMS识别：<a href="https://www.yunsee.cn/">https://www.yunsee.cn/</a></p>
-<p>备份：敏感目录文件扫描-7kbscan-WebPathBrute</p>
-<p>CVS：<a href="https://github.com/kost/dvcs-ripper">https://github.com/kost/dvcs-ripper</a></p>
-<p>GIT：<a href="https://github.com/lijiejie/GitHack">https://github.com/lijiejie/GitHack</a></p>
-<p>SVN：<a href="https://github.com/callmefeifei/SvnHack">https://github.com/callmefeifei/SvnHack</a></p>
-<p>DS_Store：<a href="https://github.com/lijiejie/ds_store_exp">https://github.com/lijiejie/ds_store_exp</a></p>
-<p>常见的Web源码泄漏漏洞及其利用</p>
-<p><a href="https://www.secpulse.com/archives/124398.html">https://www.secpulse.com/archives/124398.html</a></p>
-<p>源码泄漏原因：</p>
-<p>1、从源码本身的特性入口</p>
-<p>2、从管理员不好的习惯入口</p>
-<p>3、从管理员不好的配置入口</p>
-<p>4、从管理员不好的意识入口</p>
-<p>5、从管理员资源信息搜集入口</p>
-<p>GITHUB资源搜索：</p>
-<p>in:name test        #仓库标题搜索含有关键字 </p>
-<p>in:descripton test     #仓库描述搜索含有关键字 </p>
-<p>in:readme test       #Readme文件搜素含有关键字 </p>
-<p>stars:&gt;3000 test      #stars数量大于3000的搜索关键字 </p>
-<p>stars:1000..3000 test   #stars数量大于1000小于3000的搜索关键字 forks:&gt;1000 test      #forks数量大于1000的搜索关键字 </p>
-<p>forks:1000..3000 test   #forks数量大于1000小于3000的搜索关键字 size:&gt;&#x3D;5000 test      #指定仓库大于5000k(5M)的搜索关键字 pushed:&gt;2019-02-12 test  #发布时间大于2019-02-12的搜索关键字 created:&gt;2019-02-12 test  #创建时间大于2019-02-12的搜索关键字 user:test         #用户名搜素 </p>
-<p>license:apache-2.0 test  #明确仓库的 LICENSE 搜索关键字 language:java test     #在java语言的代码中搜索关键字 </p>
-<p>user:test in:name test   #组合搜索,用户名test的标题含有test的</p>
-<p>关键字配合谷歌搜索：</p>
-<p>site:Github.com smtp  </p>
-<p>site:Github.com smtp @qq.com  </p>
-<p>site:Github.com smtp @126.com  </p>
-<p>site:Github.com smtp @163.com  </p>
-<p>site:Github.com smtp @sina.com.cn </p>
-<p>site:Github.com smtp password </p>
-<p>site:Github.com String password smtp</p>
-]]></content>
   </entry>
 </search>

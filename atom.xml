@@ -6,7 +6,7 @@
   <link href="https://gloam-knight.github.io/atom.xml" rel="self"/>
   
   <link href="https://gloam-knight.github.io/"/>
-  <updated>2023-06-15T05:33:48.769Z</updated>
+  <updated>2023-06-22T15:46:50.304Z</updated>
   <id>https://gloam-knight.github.io/</id>
   
   <author>
@@ -17,18 +17,58 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://gloam-knight.github.io/2023/06/19/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
-    <id>https://gloam-knight.github.io/2023/06/19/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</id>
-    <published>2023-06-19T13:50:54.338Z</published>
-    <updated>2023-06-15T05:33:48.769Z</updated>
+    <title>Chatgpt报错</title>
+    <link href="https://gloam-knight.github.io/2023/06/22/Chatgpt%E6%8A%A5%E9%94%99/"/>
+    <id>https://gloam-knight.github.io/2023/06/22/Chatgpt%E6%8A%A5%E9%94%99/</id>
+    <published>2023-06-21T16:00:00.000Z</published>
+    <updated>2023-06-22T15:46:50.304Z</updated>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;信息收集&quot;&gt;&lt;a href=&quot;#信息收集&quot; class=&quot;headerlink&quot; title=&quot;信息收集&quot;&gt;&lt;/a&gt;信息收集&lt;/h1&gt;&lt;p&gt;#知识点：&lt;/p&gt;
-&lt;p&gt;1、打点-Web架构-语言&amp;amp;中间件&amp;amp;数据库&amp;amp;系统等&lt;/p&gt;
-&lt;p&gt;2、打点</summary>
+    <summary type="html">&lt;h2 id=&quot;Chatgpt无法访问问题&quot;&gt;&lt;a href=&quot;#Chatgpt无法访问问题&quot; class=&quot;headerlink&quot; title=&quot;Chatgpt无法访问问题&quot;&gt;&lt;/a&gt;Chatgpt无法访问问题&lt;/h2&gt;&lt;p&gt;Chatgpt也算我半个老师了，帮我解决了不少问题。</summary>
+      
+    
+    
+    
+    
+    <category term="疑难" scheme="https://gloam-knight.github.io/tags/%E7%96%91%E9%9A%BE/"/>
+    
+    <category term="随笔" scheme="https://gloam-knight.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python安装</title>
+    <link href="https://gloam-knight.github.io/2023/06/20/Python%E5%AE%89%E8%A3%85/"/>
+    <id>https://gloam-knight.github.io/2023/06/20/Python%E5%AE%89%E8%A3%85/</id>
+    <published>2023-06-19T16:00:00.000Z</published>
+    <updated>2023-06-22T15:48:08.516Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Python安装&quot;&gt;&lt;a href=&quot;#Python安装&quot; class=&quot;headerlink&quot; title=&quot;Python安装&quot;&gt;&lt;/a&gt;Python安装&lt;/h1&gt;&lt;p&gt;因为有些工具只能用python2，而有的工具得用python3运行。所以我准备在win10里</summary>
+      
+    
+    
+    
+    
+    <category term="python" scheme="https://gloam-knight.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://gloam-knight.github.io/2023/06/19/hello-world/"/>
+    <id>https://gloam-knight.github.io/2023/06/19/hello-world/</id>
+    <published>2023-06-19T13:50:54.335Z</published>
+    <updated>2023-06-04T02:06:45.075Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
       
     
     
@@ -58,20 +98,22 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://gloam-knight.github.io/2023/06/04/hello-world/"/>
-    <id>https://gloam-knight.github.io/2023/06/04/hello-world/</id>
-    <published>2023-06-04T02:06:45.075Z</published>
-    <updated>2023-06-04T02:06:45.075Z</updated>
+    <title>信息收集</title>
+    <link href="https://gloam-knight.github.io/2023/05/20/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
+    <id>https://gloam-knight.github.io/2023/05/20/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</id>
+    <published>2023-05-19T16:00:00.000Z</published>
+    <updated>2023-06-22T12:10:47.762Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;h1 id=&quot;信息收集&quot;&gt;&lt;a href=&quot;#信息收集&quot; class=&quot;headerlink&quot; title=&quot;信息收集&quot;&gt;&lt;/a&gt;信息收集&lt;/h1&gt;&lt;h4 id=&quot;1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等&quot;&gt;&lt;a href=&quot;#1-Web架构-语言-</summary>
       
     
     
     
+    
+    <category term="信息收集" scheme="https://gloam-knight.github.io/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
     
   </entry>
   
