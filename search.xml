@@ -6,11 +6,11 @@
     <content><![CDATA[<h1 id="Python安装"><a href="#Python安装" class="headerlink" title="Python安装"></a>Python安装</h1><p>因为有些工具只能用python2，而有的工具得用python3运行。所以我准备在win10里同时装这两个，而且CSDN上也正好有这类的文章。但是！，可能因为时效性，安装过程中出了大大小小的问题，就没有成功，就很烦! </p>
 <p>最近刚把电脑系统重装完，也把python2和python3下载好了。下面记录一下我安装的过程。</p>
 <p>1、打开<a href="http://www.python.org进入官网下载，点击Downloads->Windows">www.python.org进入官网下载，点击Downloads-&gt;Windows</a></p>
-<p><img src="/../image%5Cimage-20230622190955743.png" alt="image-20230622190955743"></p>
+<p><img src="/../image/image-20230622190955743.png" alt="image-20230622190955743"></p>
 <p>然后就可以看到版本信息了</p>
-<p><img src="/../image%5Cimage-20230622192032268.png" alt="image-20230622192032268"></p>
+<p><img src="/../image/image-20230622192032268.png" alt="image-20230622192032268"></p>
 <p>2、先下载python27</p>
-<p><img src="/../image%5Cimage-20230622192319275.png" alt="image-20230622192319275"></p>
+<p><img src="/../image/image-20230622192319275.png" alt="image-20230622192319275"></p>
 <p>也可以下载python2其他版本</p>
 <p>3、然后点击安装[具体内容CSDN大量文章]</p>
 <p>Install for aii users-&gt;设置存放目录–&gt;无脑next-&gt;finish</p>
@@ -23,7 +23,7 @@
 <p>下载<code>get-pip.py</code>脚本文件：</p>
 <ul>
 <li><p>在浏览器中打开以下链接：<a href="https://bootstrap.pypa.io/pip/2.7/get-pip.py">https://bootstrap.pypa.io/pip/2.7/get-pip.py</a></p>
-<p><img src="/../image%5Cimage-20230622194355360.png" alt="image-20230622194355360"></p>
+<p><img src="/../image/image-20230622194355360.png" alt="image-20230622194355360"></p>
 </li>
 <li><p>创建一个空白文本文本，在网页中选择全部内容，复制（Ctrl+C）。</p>
 </li>
@@ -44,9 +44,9 @@
 </li>
 </ul>
 <p>6.下载python3，过程和上面差不多，python3自带pip。所以就没有安装python2那么麻烦。</p>
-<p><img src="/../image%5Cimage-20230622200151539.png" alt="image-20230622200151539"></p>
+<p><img src="/../image/image-20230622200151539.png" alt="image-20230622200151539"></p>
 <p>最后环境变量</p>
-<p><img src="/../image%5Cimage-20230622200256989.png" alt="image-20230622200256989"></p>
+<p><img src="/../image/image-20230622200256989.png" alt="image-20230622200256989"></p>
 <p>最后输入验证命令，然后就安装完成啦！</p>
 ]]></content>
       <tags>
@@ -58,22 +58,22 @@
     <url>/2023/06/22/Chatgpt%E6%8A%A5%E9%94%99/</url>
     <content><![CDATA[<h2 id="Chatgpt无法访问问题"><a href="#Chatgpt无法访问问题" class="headerlink" title="Chatgpt无法访问问题"></a>Chatgpt无法访问问题</h2><p>Chatgpt也算我半个老师了，帮我解决了不少问题。</p>
 <p>某天重装系统，重新下载Google，当登录网站时：</p>
-<p><img src="/../image%5CChatgpt1.png" alt="Chatgpt1.png"></p>
+<p><img src="/../image/Chatgpt1.png" alt="Chatgpt1.png"></p>
 <h4 id="有问题就解决问题-lt-很乐观-gt"><a href="#有问题就解决问题-lt-很乐观-gt" class="headerlink" title="有问题就解决问题&lt;很乐观&gt;"></a>有问题就解决问题&lt;很乐观&gt;</h4><p>网上查了不少资料，协议不支持，就去加其他协议。</p>
 <p>根据文章所说，勾选了两外三个，结果是失败了。</p>
-<p><img src="/../image%5CChatgpt2.png" alt="Chatgpt2.png"></p>
+<p><img src="/../image/Chatgpt2.png" alt="Chatgpt2.png"></p>
 <p>有一篇说是TLS 1.2是最新的，所以没道理TLS 1.2不行，那么一定是其他问题</p>
 <h4 id="会不会是节点问题-lt-有点烦躁-gt"><a href="#会不会是节点问题-lt-有点烦躁-gt" class="headerlink" title="会不会是节点问题&lt;有点烦躁&gt;"></a>会不会是节点问题&lt;有点烦躁&gt;</h4><p>clash换了n个节点。。。。。</p>
 <p>甚至尝试了火狐浏览器</p>
 <p>。。。没啥用   (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄</p>
 <h4 id="国内ChatAi-lt-突发奇想-gt"><a href="#国内ChatAi-lt-突发奇想-gt" class="headerlink" title="国内ChatAi&lt;突发奇想&gt;"></a>国内ChatAi&lt;突发奇想&gt;</h4><p>既然国外的AI用不了，那使用国内的吧！</p>
 <p>文心一言暂时没找到，国内ai一大把，随便找了个能用的。</p>
-<h5 id="另一个答案出现了：Google的问题"><a href="#另一个答案出现了：Google的问题" class="headerlink" title="另一个答案出现了：Google的问题"></a>另一个答案出现了：Google的问题</h5><p><img src="/../image%5CChatgpt3.png" alt="Chatgpt3.png"></p>
+<h5 id="另一个答案出现了：Google的问题"><a href="#另一个答案出现了：Google的问题" class="headerlink" title="另一个答案出现了：Google的问题"></a>另一个答案出现了：Google的问题</h5><p><img src="/../image/Chatgpt3.png" alt="Chatgpt3.png"></p>
 <p>果然！</p>
-<p><img src="/../image%5CChatgpt4.png" alt="Chatgpt4.png"></p>
+<p><img src="/../image/Chatgpt4.png" alt="Chatgpt4.png"></p>
 <p>因为之前下载的时候把文件夹移动到了D盘，我没有先卸载，而是把Google文件夹先放回C盘去了。</p>
 <p>结果：</p>
-<p><img src="/../image%5CChatgpt5.png" alt="Chatgpt5.png"></p>
+<p><img src="/../image/Chatgpt5.png" alt="Chatgpt5.png"></p>
 <h4 id="问题排除-lt-无语-gt"><a href="#问题排除-lt-无语-gt" class="headerlink" title="问题排除&lt;无语&gt;"></a>问题排除&lt;无语&gt;</h4><p>[此时已经过去1个多小时了，半夜2点，猫头鹰都要睡觉了md]</p>
 <p>国内ai问不出啥，文章找不到类似的，只好询问群友。</p>
 <p>无人应答————</p>
