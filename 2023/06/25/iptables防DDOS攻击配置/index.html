@@ -22,20 +22,26 @@
     var CONFIG = {"hostname":"gloam-knight.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="信息收集1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等web源码：互站网 fofa搜**源码 一个网站多个域名 备案查询 3.Web源码获取-泄露安全&amp;资源监控&amp;其他等4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等#信息点： 基础信息，系统信息，应用信息，防护信息，人员">
+  <meta name="description" content="iptables防DDOS攻击配置一、实验简介 本实验旨在演示如何使用CentOS防火墙iptables配置来抵御DDOS（分布式拒绝服务）攻击。实验中，我们将模拟攻击者使用Kali Linux对目标CentOS服务器进行DDOS攻击，然后通过配置iptables规则来减轻和阻止攻击流量。 二、实验配置命令 *Iptables相关命令：* 查看当前iptables规则：iptables -L 清除">
 <meta property="og:type" content="article">
-<meta property="og:title" content="信息收集">
-<meta property="og:url" content="https://gloam-knight.github.io/2023/05/20/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/index.html">
+<meta property="og:title" content="iptables防DDOS攻击配置">
+<meta property="og:url" content="https://gloam-knight.github.io/2023/06/25/iptables%E9%98%B2DDOS%E6%94%BB%E5%87%BB%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="Gloam的博客">
-<meta property="og:description" content="信息收集1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等web源码：互站网 fofa搜**源码 一个网站多个域名 备案查询 3.Web源码获取-泄露安全&amp;资源监控&amp;其他等4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等#信息点： 基础信息，系统信息，应用信息，防护信息，人员">
+<meta property="og:description" content="iptables防DDOS攻击配置一、实验简介 本实验旨在演示如何使用CentOS防火墙iptables配置来抵御DDOS（分布式拒绝服务）攻击。实验中，我们将模拟攻击者使用Kali Linux对目标CentOS服务器进行DDOS攻击，然后通过配置iptables规则来减轻和阻止攻击流量。 二、实验配置命令 *Iptables相关命令：* 查看当前iptables规则：iptables -L 清除">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-05-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-06-22T12:10:47.762Z">
+<meta property="og:image" content="https://gloam-knight.github.io/..%5Cimage%5Cwlaqsy%5CDD1.jpg">
+<meta property="og:image" content="https://gloam-knight.github.io/image/wlaqsy/%5CDD2.jpg">
+<meta property="og:image" content="https://gloam-knight.github.io/image/wlaqsy/DD3.jpg">
+<meta property="og:image" content="https://gloam-knight.github.io/image/wlaqsy/DD4.jpg">
+<meta property="og:image" content="https://gloam-knight.github.io/image/wlaqsy/DD5.jpg">
+<meta property="article:published_time" content="2023-06-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-06-28T15:32:28.146Z">
 <meta property="article:author" content="江夏">
-<meta property="article:tag" content="信息收集">
+<meta property="article:tag" content="网络安全实验">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gloam-knight.github.io/..%5Cimage%5Cwlaqsy%5CDD1.jpg">
 
-<link rel="canonical" href="https://gloam-knight.github.io/2023/05/20/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
+<link rel="canonical" href="https://gloam-knight.github.io/2023/06/25/iptables%E9%98%B2DDOS%E6%94%BB%E5%87%BB%E9%85%8D%E7%BD%AE/">
 
 
 <script id="page-configurations">
@@ -48,7 +54,7 @@
   };
 </script>
 
-  <title>信息收集 | Gloam的博客</title>
+  <title>iptables防DDOS攻击配置 | Gloam的博客</title>
   
 
 
@@ -195,7 +201,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://gloam-knight.github.io/2023/05/20/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
+    <link itemprop="mainEntityOfPage" href="https://gloam-knight.github.io/2023/06/25/iptables%E9%98%B2DDOS%E6%94%BB%E5%87%BB%E9%85%8D%E7%BD%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jx.jpg">
@@ -208,7 +214,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          信息收集
+          iptables防DDOS攻击配置
         </h1>
 
         <div class="post-meta">
@@ -218,14 +224,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2023-05-20 00:00:00" itemprop="dateCreated datePublished" datetime="2023-05-20T00:00:00+08:00">2023-05-20</time>
+              <time title="创建时间：2023-06-25 00:00:00" itemprop="dateCreated datePublished" datetime="2023-06-25T00:00:00+08:00">2023-06-25</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-06-22 20:10:47" itemprop="dateModified" datetime="2023-06-22T20:10:47+08:00">2023-06-22</time>
+                <time title="修改时间：2023-06-28 23:32:28" itemprop="dateModified" datetime="2023-06-28T23:32:28+08:00">2023-06-28</time>
               </span>
 
           
@@ -246,71 +252,56 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h1><h4 id="1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等"><a href="#1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等" class="headerlink" title="1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等"></a>1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等</h4><h4 id="2-Web源码-CMS开源-amp-闭源售卖-amp-自主研发等"><a href="#2-Web源码-CMS开源-amp-闭源售卖-amp-自主研发等" class="headerlink" title="2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等"></a>2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等</h4><p>web源码：互站网 fofa搜**源码</p>
-<p>一个网站多个域名</p>
-<p>备案查询</p>
-<h4 id="3-Web源码获取-泄露安全-amp-资源监控-amp-其他等"><a href="#3-Web源码获取-泄露安全-amp-资源监控-amp-其他等" class="headerlink" title="3.Web源码获取-泄露安全&amp;资源监控&amp;其他等"></a>3.Web源码获取-泄露安全&amp;资源监控&amp;其他等</h4><h4 id="4-Web域名-子域名-amp-相似域名-amp-反查域名-amp-旁注等"><a href="#4-Web域名-子域名-amp-相似域名-amp-反查域名-amp-旁注等" class="headerlink" title="4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等"></a>4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等</h4><p>#信息点：</p>
-<p>基础信息，系统信息，应用信息，防护信息，人员信息，其他信息等</p>
-<p>#技术点：</p>
-<p>CMS识别，端口扫描，CDN绕过，源码获取，子域名查询，WAF识别，负载均衡识别等</p>
-<p>源码泄漏集合：①composer.json②git源码泄露③svn源码泄露④hg源码泄漏⑤网站备份压缩文件</p>
-<p>⑥WEB-INF&#x2F;web.xml 泄露⑦DS_Store 文件泄露⑧SWP 文件泄露⑨CVS泄露⑩Bzr泄露</p>
-<p>GitHub源码泄漏</p>
-<p>源码泄漏原因：1、从源码本身的特性入口</p>
-<p>2、从管理员不好的习惯入口</p>
-<p>3、从管理员不好的配置入口</p>
-<p>4、从管理员不好的意识入口</p>
-<p>5、从管理员资源信息搜集入口</p>
-<p>[文章]常见的Web源码泄漏漏洞及其利用</p>
-<p><a target="_blank" rel="noopener" href="https://www.secpulse.com/archives/124398.html">https://www.secpulse.com/archives/124398.html</a></p>
-<p>相关利用项目：</p>
-<p>CMS识别：<a target="_blank" rel="noopener" href="https://www.yunsee.cn/">https://www.yunsee.cn/</a></p>
-<p>备份：敏感目录文件扫描-7kbscan-WebPathBrute</p>
-<p>CVS：<a target="_blank" rel="noopener" href="https://github.com/kost/dvcs-ripper">https://github.com/kost/dvcs-ripper</a></p>
-<p>GIT：<a target="_blank" rel="noopener" href="https://github.com/lijiejie/GitHack">https://github.com/lijiejie/GitHack</a></p>
-<p>SVN：<a target="_blank" rel="noopener" href="https://github.com/callmefeifei/SvnHack">https://github.com/callmefeifei/SvnHack</a></p>
-<p>DS_Store：<a target="_blank" rel="noopener" href="https://github.com/lijiejie/ds_store_exp">https://github.com/lijiejie/ds_store_exp</a></p>
-<h4 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h4><p>超级ping：CDN服务识别；超级ping：ping.chinaz.com</p>
-<p>Kali上自带Nmap，Masscan，lbd等项目</p>
-<p>Masscan：端口扫描，应用协议<a target="_blank" rel="noopener" href="https://github.com/robertdavidgraham/masscan">https://github.com/robertdavidgraham/masscan</a></p>
-<p>Wafw00f：Web应用防护防火墙识别<a target="_blank" rel="noopener" href="https://github.com/EnableSecurity/wafw00f">https://github.com/EnableSecurity/wafw00f</a></p>
-<p>Nmap：端口扫描，应用协议，防火墙识别</p>
-<p>lbd：负载均衡，广域网负载均衡，应用层负载均衡</p>
-<p>[文章]端口协议安全：</p>
-<p><a target="_blank" rel="noopener" href="https://www.se7ensec.cn/2018/11/28/%E7%AB%AF%E5%8F%A3%E6%B8%97%E9%80%8F%E6%80%BB%E7%BB%93/">https://www.se7ensec.cn/2018/11/28/%E7%AB%AF%E5%8F%A3%E6%B8%97%E9%80%8F%E6%80%BB%E7%BB%93/</a></p>
-<p>旁注：</p>
-<p>同服务器下面的不同WEB应用查询技术</p>
-<p>（旁注查询）</p>
-<p>C段：</p>
-<p>同网段下面的不同服务器IP下的WEB应用查询技术</p>
-<h4 id="绕过CDN方法"><a href="#绕过CDN方法" class="headerlink" title="绕过CDN方法"></a>绕过CDN方法</h4><p>1.nslook：Win下使用nslookup命令进行查询，若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。</p>
-<p>2.ping查询</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">https://asm.ca.com/en/ping.php/</span><br><span class="line">http://ping.chinaz.com/</span><br><span class="line">https://ping.aizhan.com/</span><br></pre></td></tr></table></figure>
-
-<p>3.工具直接查询</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://www.cdnplanet.com/tools/cdnfinder/</span><br><span class="line">https://www.ipip.net/ip.html</span><br></pre></td></tr></table></figure>
-
-<p>[相关文章]<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/33440472">https://zhuanlan.zhihu.com/p/33440472</a></p>
-<p>[相关文章]<a target="_blank" rel="noopener" href="https://www.cnblogs.com/blacksunny/p/5771827.html">https://www.cnblogs.com/blacksunny/p/5771827.html</a></p>
-<p>超级Ping：<a target="_blank" rel="noopener" href="https://www.17ce.com/">https://www.17ce.com/</a></p>
-<p>接口查询：<a target="_blank" rel="noopener" href="https://get-site-ip.com/">https://get-site-ip.com/</a></p>
-<p>国外请求：<a target="_blank" rel="noopener" href="https://tools.ipip.net/cdn.php">https://tools.ipip.net/cdn.php</a></p>
-<p>全网扫描：<a target="_blank" rel="noopener" href="https://github.com/Tai7sy/fuckcdn">https://github.com/Tai7sy/fuckcdn</a></p>
-<h4 id="GITHUB资源搜索："><a href="#GITHUB资源搜索：" class="headerlink" title="GITHUB资源搜索："></a>GITHUB资源搜索：</h4><p>in:name test        #仓库标题搜索含有关键字 </p>
-<p>in:descripton test     #仓库描述搜索含有关键字 </p>
-<p>in:readme test       #Readme文件搜素含有关键字 </p>
-<p>stars:&gt;3000 test      #stars数量大于3000的搜索关键字 </p>
-<p>stars:1000..3000 test   #stars数量大于1000小于3000的搜索关键字 forks:&gt;1000 test      #forks数量大于1000的搜索关键字 </p>
-<p>forks:1000..3000 test   #forks数量大于1000小于3000的搜索关键字 size:&gt;&#x3D;5000 test      #指定仓库大于5000k(5M)的搜索关键字 pushed:&gt;2019-02-12 test  #发布时间大于2019-02-12的搜索关键字 created:&gt;2019-02-12 test  #创建时间大于2019-02-12的搜索关键字 user:test         #用户名搜素 </p>
-<p>license:apache-2.0 test  #明确仓库的 LICENSE 搜索关键字 language:java test     #在java语言的代码中搜索关键字 </p>
-<p>user:test in:name test   #组合搜索,用户名test的标题含有test的</p>
-<h4 id="关键字配合谷歌搜索："><a href="#关键字配合谷歌搜索：" class="headerlink" title="关键字配合谷歌搜索："></a>关键字配合谷歌搜索：</h4><p>site:Github.com smtp  </p>
-<p>site:Github.com smtp @qq.com  </p>
-<p>site:Github.com smtp @126.com  </p>
-<p>site:Github.com smtp @163.com  </p>
-<p>site:Github.com smtp @sina.com.cn </p>
-<p>site:Github.com smtp password </p>
-<p>site:Github.com String password smtp</p>
+        <h1 id="iptables防DDOS攻击配置"><a href="#iptables防DDOS攻击配置" class="headerlink" title="iptables防DDOS攻击配置"></a>iptables防DDOS攻击配置</h1><p>一、实验简介</p>
+<p>本实验旨在演示如何使用CentOS防火墙iptables配置来抵御DDOS（分布式拒绝服务）攻击。实验中，我们将模拟攻击者使用Kali Linux对目标CentOS服务器进行DDOS攻击，然后通过配置iptables规则来减轻和阻止攻击流量。</p>
+<p>二、实验配置命令</p>
+<p><em><strong>*Iptables相关命令：*</strong></em></p>
+<p>查看当前iptables规则：iptables -L</p>
+<p>清除当前iptables规则：iptables -F</p>
+<p>添加规则到指定链：iptables -A <chain> <options></p>
+<p>删除指定链上的规则：</p>
+<p>iptables -D <chain> <rule_number></p>
+<p>设置默认策略：iptables -P <chain> <policy></p>
+<p>允许特定端口的连接：</p>
+<p>iptables -A INPUT -p <protocol> –dport <port> -j ACCEPT</p>
+<p>拒绝特定端口的连接：</p>
+<p>iptables -A INPUT -p <protocol> –dport <port> -j DROP</p>
+<p>允许特定源IP的连接：iptables -A INPUT -s <source_ip> -j ACCEPT</p>
+<p>拒绝特定源IP的连接：iptables -A INPUT -s <source_ip> -j DROP</p>
+<p>限制连接速率：</p>
+<p>iptables -A INPUT -p <protocol> –dport <port> -m limit –limit <limit_rate> -j ACCEPT</p>
+<p>Kali：</p>
+<p>发送TCP SYN探测报文：</p>
+<p>sudo hping3 -S -p 80 <target IP></p>
+<p>发送TCP ACK探测报文：</p>
+<p>sudo hping3 -A -p 80 <target IP></p>
+<p>发送UDP探测报文：</p>
+<p>sudo hping3 –udp -p 123 <target IP></p>
+<p>发送封包为”hello”的RAW IP数据包：</p>
+<p>sudo hping3 –rawip -p 80 -k “hello” <target IP></p>
+<p>使用跃点数（TTL）来确定网络拓扑结构：</p>
+<p>sudo hping3 -p 80 -t 1-30 <a target="_blank" rel="noopener" href="http://www.google.com/">www.google.com</a></p>
+<p>拒绝服务攻击</p>
+<p>使用Hping3可以很方便构建拒绝服务攻击。比如对目标机发起大量SYN连接，伪造源地址为192.168.10.99，并使用1000微秒的间隔发送各个SYN包。</p>
+<p>hping3 -I eth0 -a192.168.10.99 -S 192.168.10.33 -p 80 -i u1000</p>
+<p>三、实验结果</p>
+<p>配置CentOS防火墙：在目标服务器上打开终端，并使用iptables命令设置防火墙规则。首先查看centos的相关配置</p>
+<p><img src="/..%5Cimage%5Cwlaqsy%5CDD1.jpg" alt="DD1.jpg"> </p>
+<p>限制ICMP流量：阻止过多的ICMP（Ping）请求。</p>
+<p>过滤TCP连接：仅允许来自信任的IP地址的TCP连接。</p>
+<p>限制连接速率：设置连接速率限制，防止过多的连接请求。</p>
+<p>启用SYN Cookie：启用SYN Cookie机制来防止SYN洪水攻击。</p>
+<p><img src="/../image/wlaqsy/%5CDD2.jpg" alt="DD2.jpg"> </p>
+<p><img src="/../image/wlaqsy/DD3.jpg" alt="DD3.jpg"> </p>
+<p>模拟DDOS攻击：在攻击者的Kali Linux上使用工具如Hping3或LOIC来模拟DDOS攻击，发送大量的请求流量到目标服务器。</p>
+<p><img src="/../image/wlaqsy/DD4.jpg" alt="DD4.jpg"> </p>
+<p><img src="/../image/wlaqsy/DD5.jpg" alt="DD5.jpg"> </p>
+<p>四、实验结果理解</p>
+<p>本实验旨在通过配置CentOS防火墙（iptables）来防御Kali的DDoS攻击。DDoS攻击是一种恶意行为，通过发送大量的网络流量来使目标服务器资源耗尽，导致服务不可用。通过正确配置防火墙规则，可以有效地减轻DDoS攻击对系统的影响。</p>
+<p>我使用Hping3对目标主机（192.168.75.130）执行了一个SYN Flood（SYN洪水）攻击，目标端口为21（FTP端口）。攻击命令如下：</p>
+<p>hping3 -c 10000 -d 120 -S -p 21 –flood –rand-source 192.168.75.130</p>
+<p>根据分析结果，我发送了大量的数据包（8849742个），但没有接收到任何回复，显示100%的数据包丢失。</p>
+<p>我通过实际操作和观察来理解和学习如何使用iptables防火墙来保护服务器免受DDoS攻击的影响。通过这个实验，我了解到如何配置和优化防火墙规则，以及如何应对DDoS攻击并保持系统的稳定和可用性。同时，也加深对网络安全和防御的认识。</p>
 
     </div>
 
@@ -346,7 +337,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://gloam-knight.github.io/2023/05/20/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/" title="信息收集">https://gloam-knight.github.io/2023/05/20/信息收集/</a>
+    <a href="https://gloam-knight.github.io/2023/06/25/iptables%E9%98%B2DDOS%E6%94%BB%E5%87%BB%E9%85%8D%E7%BD%AE/" title="iptables防DDOS攻击配置">https://gloam-knight.github.io/2023/06/25/iptables防DDOS攻击配置/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -357,7 +348,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/" rel="tag"># 信息收集</a>
+              <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/" rel="tag"># 网络安全实验</a>
           </div>
 
         
@@ -365,10 +356,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2023/06/04/%E4%BA%91%E8%AE%A1%E7%AE%97/" rel="next" title="云计算">
-      云计算 <i class="fa fa-chevron-right"></i>
+    <a href="/2023/06/25/iptables%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/" rel="prev" title="iptables安装配置与使用">
+      <i class="fa fa-chevron-left"></i> iptables安装配置与使用
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/06/25/Nikto%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/" rel="next" title="Nikto安装配置与使用">
+      Nikto安装配置与使用 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -428,7 +422,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="nav-number">1.</span> <span class="nav-text">信息收集</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Web%E6%9E%B6%E6%9E%84-%E8%AF%AD%E8%A8%80-amp-%E4%B8%AD%E9%97%B4%E4%BB%B6-amp-%E6%95%B0%E6%8D%AE%E5%BA%93-amp-%E7%B3%BB%E7%BB%9F%E7%AD%89"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Web%E6%BA%90%E7%A0%81-CMS%E5%BC%80%E6%BA%90-amp-%E9%97%AD%E6%BA%90%E5%94%AE%E5%8D%96-amp-%E8%87%AA%E4%B8%BB%E7%A0%94%E5%8F%91%E7%AD%89"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Web%E6%BA%90%E7%A0%81%E8%8E%B7%E5%8F%96-%E6%B3%84%E9%9C%B2%E5%AE%89%E5%85%A8-amp-%E8%B5%84%E6%BA%90%E7%9B%91%E6%8E%A7-amp-%E5%85%B6%E4%BB%96%E7%AD%89"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">3.Web源码获取-泄露安全&amp;资源监控&amp;其他等</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-Web%E5%9F%9F%E5%90%8D-%E5%AD%90%E5%9F%9F%E5%90%8D-amp-%E7%9B%B8%E4%BC%BC%E5%9F%9F%E5%90%8D-amp-%E5%8F%8D%E6%9F%A5%E5%9F%9F%E5%90%8D-amp-%E6%97%81%E6%B3%A8%E7%AD%89"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AB%AF%E5%8F%A3"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">端口</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%95%E8%BF%87CDN%E6%96%B9%E6%B3%95"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">绕过CDN方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GITHUB%E8%B5%84%E6%BA%90%E6%90%9C%E7%B4%A2%EF%BC%9A"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">GITHUB资源搜索：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E5%AD%97%E9%85%8D%E5%90%88%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%B4%A2%EF%BC%9A"><span class="nav-number">1.0.0.8.</span> <span class="nav-text">关键字配合谷歌搜索：</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#iptables%E9%98%B2DDOS%E6%94%BB%E5%87%BB%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">iptables防DDOS攻击配置</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

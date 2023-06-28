@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Gloam</title>
+  <title>Gloam的博客</title>
   
   <subtitle>人世红尘中</subtitle>
   <link href="https://gloam-knight.github.io/atom.xml" rel="self"/>
   
   <link href="https://gloam-knight.github.io/"/>
-  <updated>2023-06-26T02:47:29.458Z</updated>
+  <updated>2023-06-28T15:24:09.926Z</updated>
   <id>https://gloam-knight.github.io/</id>
   
   <author>
@@ -15,6 +15,89 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nmap安装配置与使用</title>
+    <link href="https://gloam-knight.github.io/2023/06/25/Nmap%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <id>https://gloam-knight.github.io/2023/06/25/Nmap%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
+    <published>2023-06-24T16:00:00.000Z</published>
+    <updated>2023-06-28T15:24:09.926Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Nmap安装配置与使用&quot;&gt;&lt;a href=&quot;#Nmap安装配置与使用&quot; class=&quot;headerlink&quot; title=&quot;Nmap安装配置与使用&quot;&gt;&lt;/a&gt;Nmap安装配置与使用&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;
+&lt;p&gt;本实验旨在使用Nmap工具对校园网系统进</summary>
+      
+    
+    
+    
+    
+    <category term="网络安全实验" scheme="https://gloam-knight.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nikto安装配置与使用</title>
+    <link href="https://gloam-knight.github.io/2023/06/25/Nikto%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <id>https://gloam-knight.github.io/2023/06/25/Nikto%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
+    <published>2023-06-24T16:00:00.000Z</published>
+    <updated>2023-06-28T15:38:52.925Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Nikto安装配置与使用&quot;&gt;&lt;a href=&quot;#Nikto安装配置与使用&quot; class=&quot;headerlink&quot; title=&quot;Nikto安装配置与使用&quot;&gt;&lt;/a&gt;Nikto安装配置与使用&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;
+&lt;p&gt;本实验旨在使用Nikto工具对校</summary>
+      
+    
+    
+    
+    
+    <category term="网络安全实验" scheme="https://gloam-knight.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iptables防DDOS攻击配置</title>
+    <link href="https://gloam-knight.github.io/2023/06/25/iptables%E9%98%B2DDOS%E6%94%BB%E5%87%BB%E9%85%8D%E7%BD%AE/"/>
+    <id>https://gloam-knight.github.io/2023/06/25/iptables%E9%98%B2DDOS%E6%94%BB%E5%87%BB%E9%85%8D%E7%BD%AE/</id>
+    <published>2023-06-24T16:00:00.000Z</published>
+    <updated>2023-06-28T15:32:28.146Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;iptables防DDOS攻击配置&quot;&gt;&lt;a href=&quot;#iptables防DDOS攻击配置&quot; class=&quot;headerlink&quot; title=&quot;iptables防DDOS攻击配置&quot;&gt;&lt;/a&gt;iptables防DDOS攻击配置&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;</summary>
+      
+    
+    
+    
+    
+    <category term="网络安全实验" scheme="https://gloam-knight.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iptables安装配置与使用</title>
+    <link href="https://gloam-knight.github.io/2023/06/25/iptables%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <id>https://gloam-knight.github.io/2023/06/25/iptables%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
+    <published>2023-06-24T16:00:00.000Z</published>
+    <updated>2023-06-28T15:43:48.712Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;iptables安装配置与使用&quot;&gt;&lt;a href=&quot;#iptables安装配置与使用&quot; class=&quot;headerlink&quot; title=&quot;iptables安装配置与使用&quot;&gt;&lt;/a&gt;iptables安装配置与使用&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;
+&lt;p&gt;本实验旨</summary>
+      
+    
+    
+    
+    
+    <category term="网络安全实验" scheme="https://gloam-knight.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>Chatgpt报错</title>

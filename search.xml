@@ -1,6 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Chatgpt报错</title>
+    <url>/2023/06/22/Chatgpt%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<h2 id="Chatgpt无法访问问题"><a href="#Chatgpt无法访问问题" class="headerlink" title="Chatgpt无法访问问题"></a>Chatgpt无法访问问题</h2><p>Chatgpt也算我半个老师了，帮我解决了不少问题。</p>
+<p>某天重装系统，重新下载Google，当登录网站时：</p>
+<p><img src="/../image/Chatgpt1.png" alt="Chatgpt1.png"></p>
+<h4 id="有问题就解决问题-lt-很乐观-gt"><a href="#有问题就解决问题-lt-很乐观-gt" class="headerlink" title="有问题就解决问题&lt;很乐观&gt;"></a>有问题就解决问题&lt;很乐观&gt;</h4><p>网上查了不少资料，协议不支持，就去加其他协议。</p>
+<p>根据文章所说，勾选了两外三个，结果是失败了。</p>
+<p><img src="/../image/Chatgpt2.png" alt="Chatgpt2.png"></p>
+<p>有一篇说是TLS 1.2是最新的，所以没道理TLS 1.2不行，那么一定是其他问题</p>
+<h4 id="会不会是节点问题-lt-有点烦躁-gt"><a href="#会不会是节点问题-lt-有点烦躁-gt" class="headerlink" title="会不会是节点问题&lt;有点烦躁&gt;"></a>会不会是节点问题&lt;有点烦躁&gt;</h4><p>clash换了n个节点。。。。。</p>
+<p>甚至尝试了火狐浏览器</p>
+<p>。。。没啥用   (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄</p>
+<h4 id="国内ChatAi-lt-突发奇想-gt"><a href="#国内ChatAi-lt-突发奇想-gt" class="headerlink" title="国内ChatAi&lt;突发奇想&gt;"></a>国内ChatAi&lt;突发奇想&gt;</h4><p>既然国外的AI用不了，那使用国内的吧！</p>
+<p>文心一言暂时没找到，国内ai一大把，随便找了个能用的。</p>
+<h5 id="另一个答案出现了：Google的问题"><a href="#另一个答案出现了：Google的问题" class="headerlink" title="另一个答案出现了：Google的问题"></a>另一个答案出现了：Google的问题</h5><p><img src="/../image/Chatgpt3.png" alt="Chatgpt3.png"></p>
+<p>果然！</p>
+<p><img src="/../image/Chatgpt4.png" alt="Chatgpt4.png"></p>
+<p>因为之前下载的时候把文件夹移动到了D盘，我没有先卸载，而是把Google文件夹先放回C盘去了。</p>
+<p>结果：</p>
+<p><img src="/../image/Chatgpt5.png" alt="Chatgpt5.png"></p>
+<h4 id="问题排除-lt-无语-gt"><a href="#问题排除-lt-无语-gt" class="headerlink" title="问题排除&lt;无语&gt;"></a>问题排除&lt;无语&gt;</h4><p>[此时已经过去1个多小时了，半夜2点，猫头鹰都要睡觉了md]</p>
+<p>国内ai问不出啥，文章找不到类似的，只好询问群友。</p>
+<p>无人应答————</p>
+<p>无法入睡————</p>
+<p>迷迷糊糊(￣o￣) . z Z  . z Z  . z Z</p>
+<h4 id="问题莫名解决"><a href="#问题莫名解决" class="headerlink" title="问题莫名解决"></a>问题莫名解决</h4><p>7点醒来，翻开群聊，无人应答。</p>
+<p>打开电脑，打开clash，打开网站</p>
+<p>6</p>
+<p>又可以登进去了。</p>
+<p>[烦]</p>
+]]></content>
+      <tags>
+        <tag>疑难</tag>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Nmap安装配置与使用</title>
+    <url>/2023/06/25/Nmap%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="Nmap安装配置与使用"><a href="#Nmap安装配置与使用" class="headerlink" title="Nmap安装配置与使用"></a>Nmap安装配置与使用</h1><p>一、实验简介</p>
+<p>本实验旨在使用Nmap工具对校园网系统进行端口扫描，以确定校园网中各主机的端口状态。端口扫描是一种常用的网络安全测试方法，用于发现主机上开放的网络服务和应用程序。</p>
+<p>Nmap（Network Mapper）是一个开源的网络扫描和安全评估工具，广泛用于网络发现、服务和版本探测、漏洞检测等方面。通过使用Nmap，我们可以快速扫描校园网中的主机，并获取关于端口开放情况的信息。</p>
+<p>在本实验中，将按照以下步骤进行校园网端口扫描：</p>
+<p>1、准备环境：确保实验环境中已经安装了Nmap工具，并确保与校园网系统处于相同的网络环境中。</p>
+<p>2、选择扫描目标：确定要扫描的目标范围，可以是整个校园网或特定的IP地址范围。</p>
+<p>3、运行Nmap扫描：使用合适的命令行参数和目标选项，在终端中运行Nmap扫描命令。</p>
+<p>4、分析扫描结果：Nmap扫描完成后，将生成一个扫描报告。在报告中，可以查看每个主机的开放端口列表、服务版本信息等。根据扫描结果，可以进一步分析校园网系统的端口状态和可能的安全风险。</p>
+<p>二、实验配置命令</p>
+<p>1.扫描单个目标主机：nmap &lt;目标主机&gt;</p>
+<p>2.扫描多个目标主机：nmap &lt;目标主机1&gt; &lt;目标主机2&gt; …</p>
+<p>3.扫描整个子网：nmap &lt;目标子网&gt;</p>
+<p>4.扫描指定端口范围：nmap -p &lt;起始端口&gt;-&lt;结束端口&gt; &lt;目标主机&gt;</p>
+<p>5.扫描常见端口：nmap -F &lt;目标主机&gt;</p>
+<p>6.扫描所有TCP端口：nmap -p- &lt;目标主机&gt;</p>
+<p>7.扫描指定端口类型（TCP、UDP或SCTP）：nmap -p &lt;端口类型&gt; &lt;目标主机&gt;</p>
+<p>8.扫描操作系统信息：nmap -O &lt;目标主机&gt;</p>
+<p>9.扫描服务和应用程序版本信息：nmap -sV &lt;目标主机&gt;</p>
+<p>10.隐蔽扫描（使用随机的扫描技术和时间间隔）：nmap -T4 -A -v &lt;目标主机&gt;</p>
+<p>三、实验结果</p>
+<p><img src="/../image/wlaqsy/Nmap1.jpg" alt="Nmap1.jpg"> </p>
+<p><img src="/../image/wlaqsy/Nmap2.jpg" alt="Nmap2.jpg"> </p>
+<p><img src="/../image/wlaqsy/Nmap3.jpg" alt="Nmap3.jpg"> </p>
+<p>四、实验结果理解</p>
+<p>首先我先用kali虚拟机通过ping命令获取校园网站的IP地址（222.185.254.201）。同时经过我过去的学习知识，获取IP的方式多种多样，也可以使用百度上面在线的ping工具同样可以得到响应的IP地址。虽然一般校园网不设置SDN，但是我还是通过站长之家里提供的工具验证了一下，以确定IP地址为（222.185.254.201）。</p>
+<p>通过nmap 222.185.254.201 这个命令，结果显示为开放的端口为25，80，110，443，他们分别提供的服务为smtp，http，pop3，ssl。因为这条命令扫出来的内容有限。所以我进一步使用了nmap -sV 222.185.254.201这条命令。从而得出很模糊的结果，比如windows下诸如server 2012 服务器之类 ，或者nginx 。经过谷歌插件证实不是windows系统。</p>
+<p>Nmap扫描结果可以揭示目标系统上开放的端口和服务，帮助渗透测试人员了解目标系统的攻击面。通过分析开放的端口和服务，渗透测试人员可以确定潜在的攻击路径和目标。通过扫描结果中的服务和版本信息，渗透测试人员可以识别目标系统上运行的软件及其版本。结合已知的漏洞数据库，渗透测试人员可以发现可能存在的潜在漏洞和安全漏洞，从而有针对性地进行后续渗透测试和利用。</p>
+<p>扫描结果可以显示目标系统上的防火墙、安全策略和安全控制措施。这有助于渗透测试人员了解目标系统的防御措施和安全配置，从而根据具体情况调整渗透测试策略和方法。扫描结果提供了关于目标系统的基本信息，如IP地址、主机名和操作系统类型。这些信息在进行后续渗透测试和情报收集过程中非常有用。</p>
+]]></content>
+      <tags>
+        <tag>网络安全实验</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Nikto安装配置与使用</title>
+    <url>/2023/06/25/Nikto%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="Nikto安装配置与使用"><a href="#Nikto安装配置与使用" class="headerlink" title="Nikto安装配置与使用"></a>Nikto安装配置与使用</h1><p>一、实验简介</p>
+<p>本实验旨在使用Nikto工具对校园防火墙和系统进行漏洞扫描和测试。Nikto是一款常用的开源Web服务器扫描工具，用于发现Web应用程序中的安全漏洞和配置错误。通过使用Nikto，可以帮助评估校园网络中防火墙和系统的安全性，并发现潜在的漏洞和风险。</p>
+<p>实验步骤：</p>
+<p>1.安装Nikto工具：确保系统上已经安装了Nikto工具。也可以从Nikto的官方网站（<a href="https://cirt.net/Nikto2%EF%BC%89%E4%B8%8A%E8%8E%B7%E5%8F%96%E6%9C%80%E6%96%B0%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%B9%B6%E6%8C%89%E7%85%A7%E5%85%B6%E6%8F%90%E4%BE%9B%E7%9A%84%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E3%80%82%E6%88%91%E8%BF%99%E9%87%8C%E6%98%AFkali%E8%87%AA%E5%B8%A6%E5%B7%A5%E5%85%B7%E3%80%82">https://cirt.net/Nikto2）上获取最新的软件包并按照其提供的安装说明进行安装。我这里是kali自带工具。</a></p>
+<p>2.配置扫描目标：确定您要扫描和测试的校园防火墙和系统的IP地址或域名。</p>
+<p>3.执行Nikto扫描：打开终端或命令提示符窗口，并使用适当的命令启动Nikto扫描。</p>
+<p>4.分析扫描结果：Nikto将生成一个包含扫描结果的报告。该报告将显示发现的漏洞、配置错误和其他安全问题。</p>
+<p>二、实验配置命令</p>
+<p>1.扫描目标</p>
+<p>nikto -h &lt;目标IP或域名&gt;   # 扫描指定的单个目标</p>
+<p>nikto -h &lt;目标IP1,目标IP2&gt;  # 扫描多个目标</p>
+<p>nikto -h &lt;目标文件&gt;     # 从文件中读取目标列表进行扫描</p>
+<p>2.选择扫描端口</p>
+<p>nikto -p &lt;端口&gt;       # 扫描指定的端口</p>
+<p>nikto -p &lt;端口1,端口2&gt;    # 扫描多个端口</p>
+<p>3.选择扫描类型：</p>
+<p>nikto -Cgidir &lt;目录&gt;     # 仅扫描CGI目录</p>
+<p>nikto -Plugins &lt;插件&gt;    # 选择指定的插件进行扫描</p>
+<p>4.设置扫描选项</p>
+<p>nikto -id &lt;用户名:密码&gt;   # 使用基本身份验证进行扫描</p>
+<p>nikto -useragent &lt;用户代理&gt; # 设置自定义用户代理字符串</p>
+<p>nikto -timeout &lt;秒数&gt;    # 设置扫描的超时时间</p>
+<p>nikto -ssl          # 强制使用SSL连接进行扫描</p>
+<p>5.输出和报告：</p>
+<p>nikto -o &lt;输出文件&gt;     # 将扫描结果保存到指定文件中</p>
+<p>nikto -Format &lt;格式&gt;     # 指定输出报告的格式（txt, csv, html, xml）</p>
+<p>nikto -Tuning &lt;选项&gt;     # 设置扫描优化选项（快速、全面、隐蔽等）</p>
+<p>三、实验结果</p>
+<p><img src="/../image/wlaqsy/Nikto1.jpg" alt="Nikto1.jpg"></p>
+<p><img src="/../image/wlaqsy/Nikto2.jpg" alt="Nikto2.jpg"> </p>
+<p>四、实验结果理解</p>
+<p>根据实验结果可以看出目标IP：222.185.254.201。目标主机名：222.185.254.201，目标端口：80。</p>
+<p>服务器信息：</p>
+<p>无法获取服务器的标识信息（No banner retrieved）。这可能意味着服务器未公开其版本或身份信息。发现的漏洞&#x2F;问题：针对根目录 &#x2F; 的扫描结果显示，缺少抵御点击劫持攻击的 X-Frame-Options 头部。可以参考链接中的文档了解更多信息。针对根目录 &#x2F; 的扫描结果显示，未设置 X-Content-Type-Options 头部。这可能导致用户代理以不同于 MIME 类型的方式呈现网站内容。</p>
+<p>扫描443端口时，SSL信息：SSL证书主题：&#x2F;CN&#x3D;*.jsut.edu.cn，支持的密码套件：ECDHE-RSA-AES256-GCM-SHA384，发行者：&#x2F;C&#x3D;BE&#x2F;O&#x3D;GlobalSign nv-sa&#x2F;CN&#x3D;GlobalSign GCC R3 DV TLS CA 2020。服务器信息：服务器：nginx</p>
+<p>发现的漏洞&#x2F;问题：对于根目录 &#x2F;，扫描结果显示缺少防点击劫持的 X-Frame-Options 头。您可以参考提供的链接了解有关 X-Frame-Options 的更多信息。对于根目录 &#x2F;，扫描结果显示未定义严格传输安全性（Strict-Transport-Security）的HTTP头。您可以参考提供的链接了解有关 Strict-Transport-Security 的更多信息。对于根目录 &#x2F;，扫描结果显示未设置 X-Content-Type-Options 头。</p>
+]]></content>
+      <tags>
+        <tag>网络安全实验</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python安装</title>
     <url>/2023/06/20/Python%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<h1 id="Python安装"><a href="#Python安装" class="headerlink" title="Python安装"></a>Python安装</h1><p>因为有些工具只能用python2，而有的工具得用python3运行。所以我准备在win10里同时装这两个，而且CSDN上也正好有这类的文章。但是！，可能因为时效性，安装过程中出了大大小小的问题，就没有成功，就很烦! </p>
@@ -54,43 +171,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Chatgpt报错</title>
-    <url>/2023/06/22/Chatgpt%E6%8A%A5%E9%94%99/</url>
-    <content><![CDATA[<h2 id="Chatgpt无法访问问题"><a href="#Chatgpt无法访问问题" class="headerlink" title="Chatgpt无法访问问题"></a>Chatgpt无法访问问题</h2><p>Chatgpt也算我半个老师了，帮我解决了不少问题。</p>
-<p>某天重装系统，重新下载Google，当登录网站时：</p>
-<p><img src="/../image/Chatgpt1.png" alt="Chatgpt1.png"></p>
-<h4 id="有问题就解决问题-lt-很乐观-gt"><a href="#有问题就解决问题-lt-很乐观-gt" class="headerlink" title="有问题就解决问题&lt;很乐观&gt;"></a>有问题就解决问题&lt;很乐观&gt;</h4><p>网上查了不少资料，协议不支持，就去加其他协议。</p>
-<p>根据文章所说，勾选了两外三个，结果是失败了。</p>
-<p><img src="/../image/Chatgpt2.png" alt="Chatgpt2.png"></p>
-<p>有一篇说是TLS 1.2是最新的，所以没道理TLS 1.2不行，那么一定是其他问题</p>
-<h4 id="会不会是节点问题-lt-有点烦躁-gt"><a href="#会不会是节点问题-lt-有点烦躁-gt" class="headerlink" title="会不会是节点问题&lt;有点烦躁&gt;"></a>会不会是节点问题&lt;有点烦躁&gt;</h4><p>clash换了n个节点。。。。。</p>
-<p>甚至尝试了火狐浏览器</p>
-<p>。。。没啥用   (̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄</p>
-<h4 id="国内ChatAi-lt-突发奇想-gt"><a href="#国内ChatAi-lt-突发奇想-gt" class="headerlink" title="国内ChatAi&lt;突发奇想&gt;"></a>国内ChatAi&lt;突发奇想&gt;</h4><p>既然国外的AI用不了，那使用国内的吧！</p>
-<p>文心一言暂时没找到，国内ai一大把，随便找了个能用的。</p>
-<h5 id="另一个答案出现了：Google的问题"><a href="#另一个答案出现了：Google的问题" class="headerlink" title="另一个答案出现了：Google的问题"></a>另一个答案出现了：Google的问题</h5><p><img src="/../image/Chatgpt3.png" alt="Chatgpt3.png"></p>
-<p>果然！</p>
-<p><img src="/../image/Chatgpt4.png" alt="Chatgpt4.png"></p>
-<p>因为之前下载的时候把文件夹移动到了D盘，我没有先卸载，而是把Google文件夹先放回C盘去了。</p>
-<p>结果：</p>
-<p><img src="/../image/Chatgpt5.png" alt="Chatgpt5.png"></p>
-<h4 id="问题排除-lt-无语-gt"><a href="#问题排除-lt-无语-gt" class="headerlink" title="问题排除&lt;无语&gt;"></a>问题排除&lt;无语&gt;</h4><p>[此时已经过去1个多小时了，半夜2点，猫头鹰都要睡觉了md]</p>
-<p>国内ai问不出啥，文章找不到类似的，只好询问群友。</p>
-<p>无人应答————</p>
-<p>无法入睡————</p>
-<p>迷迷糊糊(￣o￣) . z Z  . z Z  . z Z</p>
-<h4 id="问题莫名解决"><a href="#问题莫名解决" class="headerlink" title="问题莫名解决"></a>问题莫名解决</h4><p>7点醒来，翻开群聊，无人应答。</p>
-<p>打开电脑，打开clash，打开网站</p>
-<p>6</p>
-<p>又可以登进去了。</p>
-<p>[烦]</p>
-]]></content>
-      <tags>
-        <tag>疑难</tag>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2023/06/19/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -109,76 +189,102 @@
 ]]></content>
   </entry>
   <entry>
-    <title>信息收集</title>
-    <url>/2023/05/20/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h1><h4 id="1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等"><a href="#1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等" class="headerlink" title="1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等"></a>1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等</h4><h4 id="2-Web源码-CMS开源-amp-闭源售卖-amp-自主研发等"><a href="#2-Web源码-CMS开源-amp-闭源售卖-amp-自主研发等" class="headerlink" title="2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等"></a>2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等</h4><p>web源码：互站网 fofa搜**源码</p>
-<p>一个网站多个域名</p>
-<p>备案查询</p>
-<h4 id="3-Web源码获取-泄露安全-amp-资源监控-amp-其他等"><a href="#3-Web源码获取-泄露安全-amp-资源监控-amp-其他等" class="headerlink" title="3.Web源码获取-泄露安全&amp;资源监控&amp;其他等"></a>3.Web源码获取-泄露安全&amp;资源监控&amp;其他等</h4><h4 id="4-Web域名-子域名-amp-相似域名-amp-反查域名-amp-旁注等"><a href="#4-Web域名-子域名-amp-相似域名-amp-反查域名-amp-旁注等" class="headerlink" title="4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等"></a>4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等</h4><p>#信息点：</p>
-<p>基础信息，系统信息，应用信息，防护信息，人员信息，其他信息等</p>
-<p>#技术点：</p>
-<p>CMS识别，端口扫描，CDN绕过，源码获取，子域名查询，WAF识别，负载均衡识别等</p>
-<p>源码泄漏集合：①composer.json②git源码泄露③svn源码泄露④hg源码泄漏⑤网站备份压缩文件</p>
-<p>⑥WEB-INF&#x2F;web.xml 泄露⑦DS_Store 文件泄露⑧SWP 文件泄露⑨CVS泄露⑩Bzr泄露</p>
-<p>GitHub源码泄漏</p>
-<p>源码泄漏原因：1、从源码本身的特性入口</p>
-<p>2、从管理员不好的习惯入口</p>
-<p>3、从管理员不好的配置入口</p>
-<p>4、从管理员不好的意识入口</p>
-<p>5、从管理员资源信息搜集入口</p>
-<p>[文章]常见的Web源码泄漏漏洞及其利用</p>
-<p><a href="https://www.secpulse.com/archives/124398.html">https://www.secpulse.com/archives/124398.html</a></p>
-<p>相关利用项目：</p>
-<p>CMS识别：<a href="https://www.yunsee.cn/">https://www.yunsee.cn/</a></p>
-<p>备份：敏感目录文件扫描-7kbscan-WebPathBrute</p>
-<p>CVS：<a href="https://github.com/kost/dvcs-ripper">https://github.com/kost/dvcs-ripper</a></p>
-<p>GIT：<a href="https://github.com/lijiejie/GitHack">https://github.com/lijiejie/GitHack</a></p>
-<p>SVN：<a href="https://github.com/callmefeifei/SvnHack">https://github.com/callmefeifei/SvnHack</a></p>
-<p>DS_Store：<a href="https://github.com/lijiejie/ds_store_exp">https://github.com/lijiejie/ds_store_exp</a></p>
-<h4 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h4><p>超级ping：CDN服务识别；超级ping：ping.chinaz.com</p>
-<p>Kali上自带Nmap，Masscan，lbd等项目</p>
-<p>Masscan：端口扫描，应用协议<a href="https://github.com/robertdavidgraham/masscan">https://github.com/robertdavidgraham/masscan</a></p>
-<p>Wafw00f：Web应用防护防火墙识别<a href="https://github.com/EnableSecurity/wafw00f">https://github.com/EnableSecurity/wafw00f</a></p>
-<p>Nmap：端口扫描，应用协议，防火墙识别</p>
-<p>lbd：负载均衡，广域网负载均衡，应用层负载均衡</p>
-<p>[文章]端口协议安全：</p>
-<p><a href="https://www.se7ensec.cn/2018/11/28/%E7%AB%AF%E5%8F%A3%E6%B8%97%E9%80%8F%E6%80%BB%E7%BB%93/">https://www.se7ensec.cn/2018/11/28/%E7%AB%AF%E5%8F%A3%E6%B8%97%E9%80%8F%E6%80%BB%E7%BB%93/</a></p>
-<p>旁注：</p>
-<p>同服务器下面的不同WEB应用查询技术</p>
-<p>（旁注查询）</p>
-<p>C段：</p>
-<p>同网段下面的不同服务器IP下的WEB应用查询技术</p>
-<h4 id="绕过CDN方法"><a href="#绕过CDN方法" class="headerlink" title="绕过CDN方法"></a>绕过CDN方法</h4><p>1.nslook：Win下使用nslookup命令进行查询，若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。</p>
-<p>2.ping查询</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">https://asm.ca.com/en/ping.php/</span><br><span class="line">http://ping.chinaz.com/</span><br><span class="line">https://ping.aizhan.com/</span><br></pre></td></tr></table></figure>
-
-<p>3.工具直接查询</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">http://www.cdnplanet.com/tools/cdnfinder/</span><br><span class="line">https://www.ipip.net/ip.html</span><br></pre></td></tr></table></figure>
-
-<p>[相关文章]<a href="https://zhuanlan.zhihu.com/p/33440472">https://zhuanlan.zhihu.com/p/33440472</a></p>
-<p>[相关文章]<a href="https://www.cnblogs.com/blacksunny/p/5771827.html">https://www.cnblogs.com/blacksunny/p/5771827.html</a></p>
-<p>超级Ping：<a href="https://www.17ce.com/">https://www.17ce.com/</a></p>
-<p>接口查询：<a href="https://get-site-ip.com/">https://get-site-ip.com/</a></p>
-<p>国外请求：<a href="https://tools.ipip.net/cdn.php">https://tools.ipip.net/cdn.php</a></p>
-<p>全网扫描：<a href="https://github.com/Tai7sy/fuckcdn">https://github.com/Tai7sy/fuckcdn</a></p>
-<h4 id="GITHUB资源搜索："><a href="#GITHUB资源搜索：" class="headerlink" title="GITHUB资源搜索："></a>GITHUB资源搜索：</h4><p>in:name test        #仓库标题搜索含有关键字 </p>
-<p>in:descripton test     #仓库描述搜索含有关键字 </p>
-<p>in:readme test       #Readme文件搜素含有关键字 </p>
-<p>stars:&gt;3000 test      #stars数量大于3000的搜索关键字 </p>
-<p>stars:1000..3000 test   #stars数量大于1000小于3000的搜索关键字 forks:&gt;1000 test      #forks数量大于1000的搜索关键字 </p>
-<p>forks:1000..3000 test   #forks数量大于1000小于3000的搜索关键字 size:&gt;&#x3D;5000 test      #指定仓库大于5000k(5M)的搜索关键字 pushed:&gt;2019-02-12 test  #发布时间大于2019-02-12的搜索关键字 created:&gt;2019-02-12 test  #创建时间大于2019-02-12的搜索关键字 user:test         #用户名搜素 </p>
-<p>license:apache-2.0 test  #明确仓库的 LICENSE 搜索关键字 language:java test     #在java语言的代码中搜索关键字 </p>
-<p>user:test in:name test   #组合搜索,用户名test的标题含有test的</p>
-<h4 id="关键字配合谷歌搜索："><a href="#关键字配合谷歌搜索：" class="headerlink" title="关键字配合谷歌搜索："></a>关键字配合谷歌搜索：</h4><p>site:Github.com smtp  </p>
-<p>site:Github.com smtp @qq.com  </p>
-<p>site:Github.com smtp @126.com  </p>
-<p>site:Github.com smtp @163.com  </p>
-<p>site:Github.com smtp @sina.com.cn </p>
-<p>site:Github.com smtp password </p>
-<p>site:Github.com String password smtp</p>
+    <title>iptables防DDOS攻击配置</title>
+    <url>/2023/06/25/iptables%E9%98%B2DDOS%E6%94%BB%E5%87%BB%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="iptables防DDOS攻击配置"><a href="#iptables防DDOS攻击配置" class="headerlink" title="iptables防DDOS攻击配置"></a>iptables防DDOS攻击配置</h1><p>一、实验简介</p>
+<p>本实验旨在演示如何使用CentOS防火墙iptables配置来抵御DDOS（分布式拒绝服务）攻击。实验中，我们将模拟攻击者使用Kali Linux对目标CentOS服务器进行DDOS攻击，然后通过配置iptables规则来减轻和阻止攻击流量。</p>
+<p>二、实验配置命令</p>
+<p><em><strong>*Iptables相关命令：*</strong></em></p>
+<p>查看当前iptables规则：iptables -L</p>
+<p>清除当前iptables规则：iptables -F</p>
+<p>添加规则到指定链：iptables -A <chain> <options></p>
+<p>删除指定链上的规则：</p>
+<p>iptables -D <chain> <rule_number></p>
+<p>设置默认策略：iptables -P <chain> <policy></p>
+<p>允许特定端口的连接：</p>
+<p>iptables -A INPUT -p <protocol> –dport <port> -j ACCEPT</p>
+<p>拒绝特定端口的连接：</p>
+<p>iptables -A INPUT -p <protocol> –dport <port> -j DROP</p>
+<p>允许特定源IP的连接：iptables -A INPUT -s <source_ip> -j ACCEPT</p>
+<p>拒绝特定源IP的连接：iptables -A INPUT -s <source_ip> -j DROP</p>
+<p>限制连接速率：</p>
+<p>iptables -A INPUT -p <protocol> –dport <port> -m limit –limit <limit_rate> -j ACCEPT</p>
+<p>Kali：</p>
+<p>发送TCP SYN探测报文：</p>
+<p>sudo hping3 -S -p 80 <target IP></p>
+<p>发送TCP ACK探测报文：</p>
+<p>sudo hping3 -A -p 80 <target IP></p>
+<p>发送UDP探测报文：</p>
+<p>sudo hping3 –udp -p 123 <target IP></p>
+<p>发送封包为”hello”的RAW IP数据包：</p>
+<p>sudo hping3 –rawip -p 80 -k “hello” <target IP></p>
+<p>使用跃点数（TTL）来确定网络拓扑结构：</p>
+<p>sudo hping3 -p 80 -t 1-30 <a href="http://www.google.com/">www.google.com</a></p>
+<p>拒绝服务攻击</p>
+<p>使用Hping3可以很方便构建拒绝服务攻击。比如对目标机发起大量SYN连接，伪造源地址为192.168.10.99，并使用1000微秒的间隔发送各个SYN包。</p>
+<p>hping3 -I eth0 -a192.168.10.99 -S 192.168.10.33 -p 80 -i u1000</p>
+<p>三、实验结果</p>
+<p>配置CentOS防火墙：在目标服务器上打开终端，并使用iptables命令设置防火墙规则。首先查看centos的相关配置</p>
+<p><img src="/..%5Cimage%5Cwlaqsy%5CDD1.jpg" alt="DD1.jpg"> </p>
+<p>限制ICMP流量：阻止过多的ICMP（Ping）请求。</p>
+<p>过滤TCP连接：仅允许来自信任的IP地址的TCP连接。</p>
+<p>限制连接速率：设置连接速率限制，防止过多的连接请求。</p>
+<p>启用SYN Cookie：启用SYN Cookie机制来防止SYN洪水攻击。</p>
+<p><img src="/../image/wlaqsy/%5CDD2.jpg" alt="DD2.jpg"> </p>
+<p><img src="/../image/wlaqsy/DD3.jpg" alt="DD3.jpg"> </p>
+<p>模拟DDOS攻击：在攻击者的Kali Linux上使用工具如Hping3或LOIC来模拟DDOS攻击，发送大量的请求流量到目标服务器。</p>
+<p><img src="/../image/wlaqsy/DD4.jpg" alt="DD4.jpg"> </p>
+<p><img src="/../image/wlaqsy/DD5.jpg" alt="DD5.jpg"> </p>
+<p>四、实验结果理解</p>
+<p>本实验旨在通过配置CentOS防火墙（iptables）来防御Kali的DDoS攻击。DDoS攻击是一种恶意行为，通过发送大量的网络流量来使目标服务器资源耗尽，导致服务不可用。通过正确配置防火墙规则，可以有效地减轻DDoS攻击对系统的影响。</p>
+<p>我使用Hping3对目标主机（192.168.75.130）执行了一个SYN Flood（SYN洪水）攻击，目标端口为21（FTP端口）。攻击命令如下：</p>
+<p>hping3 -c 10000 -d 120 -S -p 21 –flood –rand-source 192.168.75.130</p>
+<p>根据分析结果，我发送了大量的数据包（8849742个），但没有接收到任何回复，显示100%的数据包丢失。</p>
+<p>我通过实际操作和观察来理解和学习如何使用iptables防火墙来保护服务器免受DDoS攻击的影响。通过这个实验，我了解到如何配置和优化防火墙规则，以及如何应对DDoS攻击并保持系统的稳定和可用性。同时，也加深对网络安全和防御的认识。</p>
 ]]></content>
       <tags>
-        <tag>信息收集</tag>
+        <tag>网络安全实验</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iptables安装配置与使用</title>
+    <url>/2023/06/25/iptables%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="iptables安装配置与使用"><a href="#iptables安装配置与使用" class="headerlink" title="iptables安装配置与使用"></a>iptables安装配置与使用</h1><p>一、实验简介</p>
+<p>本实验旨在介绍iptables工具的安装、配置和基本使用，以帮助我们了解如何设置和管理防火墙规则。</p>
+<p>这里虽然kali本身自带iptables防火墙，但为了后续实验的便捷性，这里我新装了一个centos系统，用这个新的系统安装iptables防火墙。</p>
+<p>二、实验配置命令</p>
+<p>安装iptables:</p>
+<p>首先，使用适用于您的Linux发行版的包管理器（如apt、yum、dnf等）安装iptables工具。</p>
+<p>配置iptables规则:</p>
+<p>了解iptables的规则结构和语法。iptables使用表（table）、链（chain）和规则（rule）来管理网络流量。</p>
+<p>使用iptables -L命令查看当前的防火墙规则。</p>
+<p>使用iptables -A命令添加新的规则。例如，可以使用以下命令允许特定端口的入站连接：iptables -A INPUT -p tcp –dport 80 -j ACCEPT</p>
+<p>使用iptables -D命令删除规则。例如，可以使用以下命令删除先前添加的规则：iptables -D INPUT -p tcp –dport 80 -j ACCEPT</p>
+<p>使用iptables -P命令设置默认策略。例如，可以使用以下命令将默认策略设置为拒绝所有入站连接：iptables -P INPUT DROP</p>
+<p>保存和加载iptables规则:</p>
+<p>使用iptables-save命令将当前的iptables规则保存到文件中。</p>
+<p>使用iptables-restore命令加载以前保存的iptables规则。</p>
+<p>三、实验结果</p>
+<p>1.查看防火墙状态</p>
+<p><img src="/../image/wlaqsy/iptables1.jpg" alt="iptables1.jpg"> </p>
+<p><img src="/../image/wlaqsy/iptables2.jpg" alt="iptables2.jpg"> </p>
+<p>2.安装iptables</p>
+<p><img src="/../image/wlaqsy/iptables3.jpg" alt="iptables3.jpg"> </p>
+<p><img src="/../image/wlaqsy/iptables4.jpg" alt="iptables4.jpg"> </p>
+<p><img src="/../image/wlaqsy/iptables5.jpg" alt="iptables5.jpg"> </p>
+<p><img src="/../image/wlaqsy/iptables6.jpg" alt="iptables6.jpg"> </p>
+<ol start="3">
+<li>查看iptables防火墙状态</li>
+</ol>
+<p><img src="/../image/wlaqsy/iptables7.jpg" alt="iptables7.jpg"> </p>
+<p><img src="/../image/wlaqsy/iptables8.jpg" alt="iptables8.jpg"> </p>
+<p>四、实验结果理解</p>
+<p>在CentOS上安装和使用iptables时，有一些注意要点，如果忽视这些内容那么安装配置iptables会有很多麻烦。这次实验虽然思路简单，内容也不多，但是对于不熟悉linux的我还是有一些难度的。</p>
+<p>首先，得确保自己具有管理员权限或以root用户身份登录到CentOS系统。如果不以管理员权限登录，时操作不了防火墙的。其次检查系统是否已安装iptables。可以使用以下命令检查iptables软件包的状态：yum list installed | grep iptables。我一开始使用的iptables -V，显示出版本了，我就以为他本身就有，实际上它并没有安装核心的组件，并不能使用相应的服务。我使用以下命令安装：yum install iptables。</p>
+<p>因为我在的centos是高版本，默认使用firewall，所以要把原先的防火墙关闭，再打开iptables防火墙。在配置iptables之前，建议备份当前的防火墙规则。</p>
+]]></content>
+      <tags>
+        <tag>网络安全实验</tag>
       </tags>
   </entry>
   <entry>
@@ -263,6 +369,79 @@
 ]]></content>
       <tags>
         <tag>元计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>信息收集</title>
+    <url>/2023/05/20/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h1><h4 id="1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等"><a href="#1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等" class="headerlink" title="1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等"></a>1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等</h4><h4 id="2-Web源码-CMS开源-amp-闭源售卖-amp-自主研发等"><a href="#2-Web源码-CMS开源-amp-闭源售卖-amp-自主研发等" class="headerlink" title="2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等"></a>2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等</h4><p>web源码：互站网 fofa搜**源码</p>
+<p>一个网站多个域名</p>
+<p>备案查询</p>
+<h4 id="3-Web源码获取-泄露安全-amp-资源监控-amp-其他等"><a href="#3-Web源码获取-泄露安全-amp-资源监控-amp-其他等" class="headerlink" title="3.Web源码获取-泄露安全&amp;资源监控&amp;其他等"></a>3.Web源码获取-泄露安全&amp;资源监控&amp;其他等</h4><h4 id="4-Web域名-子域名-amp-相似域名-amp-反查域名-amp-旁注等"><a href="#4-Web域名-子域名-amp-相似域名-amp-反查域名-amp-旁注等" class="headerlink" title="4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等"></a>4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等</h4><p>#信息点：</p>
+<p>基础信息，系统信息，应用信息，防护信息，人员信息，其他信息等</p>
+<p>#技术点：</p>
+<p>CMS识别，端口扫描，CDN绕过，源码获取，子域名查询，WAF识别，负载均衡识别等</p>
+<p>源码泄漏集合：①composer.json②git源码泄露③svn源码泄露④hg源码泄漏⑤网站备份压缩文件</p>
+<p>⑥WEB-INF&#x2F;web.xml 泄露⑦DS_Store 文件泄露⑧SWP 文件泄露⑨CVS泄露⑩Bzr泄露</p>
+<p>GitHub源码泄漏</p>
+<p>源码泄漏原因：1、从源码本身的特性入口</p>
+<p>2、从管理员不好的习惯入口</p>
+<p>3、从管理员不好的配置入口</p>
+<p>4、从管理员不好的意识入口</p>
+<p>5、从管理员资源信息搜集入口</p>
+<p>[文章]常见的Web源码泄漏漏洞及其利用</p>
+<p><a href="https://www.secpulse.com/archives/124398.html">https://www.secpulse.com/archives/124398.html</a></p>
+<p>相关利用项目：</p>
+<p>CMS识别：<a href="https://www.yunsee.cn/">https://www.yunsee.cn/</a></p>
+<p>备份：敏感目录文件扫描-7kbscan-WebPathBrute</p>
+<p>CVS：<a href="https://github.com/kost/dvcs-ripper">https://github.com/kost/dvcs-ripper</a></p>
+<p>GIT：<a href="https://github.com/lijiejie/GitHack">https://github.com/lijiejie/GitHack</a></p>
+<p>SVN：<a href="https://github.com/callmefeifei/SvnHack">https://github.com/callmefeifei/SvnHack</a></p>
+<p>DS_Store：<a href="https://github.com/lijiejie/ds_store_exp">https://github.com/lijiejie/ds_store_exp</a></p>
+<h4 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h4><p>超级ping：CDN服务识别；超级ping：ping.chinaz.com</p>
+<p>Kali上自带Nmap，Masscan，lbd等项目</p>
+<p>Masscan：端口扫描，应用协议<a href="https://github.com/robertdavidgraham/masscan">https://github.com/robertdavidgraham/masscan</a></p>
+<p>Wafw00f：Web应用防护防火墙识别<a href="https://github.com/EnableSecurity/wafw00f">https://github.com/EnableSecurity/wafw00f</a></p>
+<p>Nmap：端口扫描，应用协议，防火墙识别</p>
+<p>lbd：负载均衡，广域网负载均衡，应用层负载均衡</p>
+<p>[文章]端口协议安全：</p>
+<p><a href="https://www.se7ensec.cn/2018/11/28/%E7%AB%AF%E5%8F%A3%E6%B8%97%E9%80%8F%E6%80%BB%E7%BB%93/">https://www.se7ensec.cn/2018/11/28/%E7%AB%AF%E5%8F%A3%E6%B8%97%E9%80%8F%E6%80%BB%E7%BB%93/</a></p>
+<p>旁注：</p>
+<p>同服务器下面的不同WEB应用查询技术</p>
+<p>（旁注查询）</p>
+<p>C段：</p>
+<p>同网段下面的不同服务器IP下的WEB应用查询技术</p>
+<h4 id="绕过CDN方法"><a href="#绕过CDN方法" class="headerlink" title="绕过CDN方法"></a>绕过CDN方法</h4><p>1.nslook：Win下使用nslookup命令进行查询，若返回域名解析结果为多个ip，多半使用了CDN，是不真实的ip。</p>
+<p>2.ping查询</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">https://asm.ca.com/en/ping.php/</span><br><span class="line">http://ping.chinaz.com/</span><br><span class="line">https://ping.aizhan.com/</span><br></pre></td></tr></table></figure>
+
+<p>3.工具直接查询</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">http://www.cdnplanet.com/tools/cdnfinder/</span><br><span class="line">https://www.ipip.net/ip.html</span><br></pre></td></tr></table></figure>
+
+<p>[相关文章]<a href="https://zhuanlan.zhihu.com/p/33440472">https://zhuanlan.zhihu.com/p/33440472</a></p>
+<p>[相关文章]<a href="https://www.cnblogs.com/blacksunny/p/5771827.html">https://www.cnblogs.com/blacksunny/p/5771827.html</a></p>
+<p>超级Ping：<a href="https://www.17ce.com/">https://www.17ce.com/</a></p>
+<p>接口查询：<a href="https://get-site-ip.com/">https://get-site-ip.com/</a></p>
+<p>国外请求：<a href="https://tools.ipip.net/cdn.php">https://tools.ipip.net/cdn.php</a></p>
+<p>全网扫描：<a href="https://github.com/Tai7sy/fuckcdn">https://github.com/Tai7sy/fuckcdn</a></p>
+<h4 id="GITHUB资源搜索："><a href="#GITHUB资源搜索：" class="headerlink" title="GITHUB资源搜索："></a>GITHUB资源搜索：</h4><p>in:name test        #仓库标题搜索含有关键字 </p>
+<p>in:descripton test     #仓库描述搜索含有关键字 </p>
+<p>in:readme test       #Readme文件搜素含有关键字 </p>
+<p>stars:&gt;3000 test      #stars数量大于3000的搜索关键字 </p>
+<p>stars:1000..3000 test   #stars数量大于1000小于3000的搜索关键字 forks:&gt;1000 test      #forks数量大于1000的搜索关键字 </p>
+<p>forks:1000..3000 test   #forks数量大于1000小于3000的搜索关键字 size:&gt;&#x3D;5000 test      #指定仓库大于5000k(5M)的搜索关键字 pushed:&gt;2019-02-12 test  #发布时间大于2019-02-12的搜索关键字 created:&gt;2019-02-12 test  #创建时间大于2019-02-12的搜索关键字 user:test         #用户名搜素 </p>
+<p>license:apache-2.0 test  #明确仓库的 LICENSE 搜索关键字 language:java test     #在java语言的代码中搜索关键字 </p>
+<p>user:test in:name test   #组合搜索,用户名test的标题含有test的</p>
+<h4 id="关键字配合谷歌搜索："><a href="#关键字配合谷歌搜索：" class="headerlink" title="关键字配合谷歌搜索："></a>关键字配合谷歌搜索：</h4><p>site:Github.com smtp  </p>
+<p>site:Github.com smtp @qq.com  </p>
+<p>site:Github.com smtp @126.com  </p>
+<p>site:Github.com smtp @163.com  </p>
+<p>site:Github.com smtp @sina.com.cn </p>
+<p>site:Github.com smtp password </p>
+<p>site:Github.com String password smtp</p>
+]]></content>
+      <tags>
+        <tag>信息收集</tag>
       </tags>
   </entry>
 </search>
