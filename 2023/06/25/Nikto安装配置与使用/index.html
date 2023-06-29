@@ -22,17 +22,17 @@
     var CONFIG = {"hostname":"gloam-knight.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Nikto安装配置与使用一、实验简介 本实验旨在使用Nikto工具对校园防火墙和系统进行漏洞扫描和测试。Nikto是一款常用的开源Web服务器扫描工具，用于发现Web应用程序中的安全漏洞和配置错误。通过使用Nikto，可以帮助评估校园网络中防火墙和系统的安全性，并发现潜在的漏洞和风险。 实验步骤： 1.安装Nikto工具：确保系统上已经安装了Nikto工具。也可以从Nikto的官方网站（https">
+  <meta name="description" content="Nikto安装配置与使用一、实验简介 本实验旨在使用Nikto工具对校园防火墙和系统进行漏洞扫描和测试。Nikto是一款常用的开源Web服务器扫描工具，用于发现Web应用程序中的安全漏洞和配置错误。通过使用Nikto，可以帮助评估校园网络中防火墙和系统的安全性，并发现潜在的漏洞和风险。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nikto安装配置与使用">
 <meta property="og:url" content="https://gloam-knight.github.io/2023/06/25/Nikto%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Gloam的博客">
-<meta property="og:description" content="Nikto安装配置与使用一、实验简介 本实验旨在使用Nikto工具对校园防火墙和系统进行漏洞扫描和测试。Nikto是一款常用的开源Web服务器扫描工具，用于发现Web应用程序中的安全漏洞和配置错误。通过使用Nikto，可以帮助评估校园网络中防火墙和系统的安全性，并发现潜在的漏洞和风险。 实验步骤： 1.安装Nikto工具：确保系统上已经安装了Nikto工具。也可以从Nikto的官方网站（https">
+<meta property="og:description" content="Nikto安装配置与使用一、实验简介 本实验旨在使用Nikto工具对校园防火墙和系统进行漏洞扫描和测试。Nikto是一款常用的开源Web服务器扫描工具，用于发现Web应用程序中的安全漏洞和配置错误。通过使用Nikto，可以帮助评估校园网络中防火墙和系统的安全性，并发现潜在的漏洞和风险。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gloam-knight.github.io/image/wlaqsy/Nikto1.jpg">
 <meta property="og:image" content="https://gloam-knight.github.io/image/wlaqsy/Nikto2.jpg">
 <meta property="article:published_time" content="2023-06-24T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-06-28T15:38:52.925Z">
+<meta property="article:modified_time" content="2023-06-29T00:44:49.124Z">
 <meta property="article:author" content="江夏">
 <meta property="article:tag" content="网络安全实验">
 <meta name="twitter:card" content="summary">
@@ -228,7 +228,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-06-28 23:38:52" itemprop="dateModified" datetime="2023-06-28T23:38:52+08:00">2023-06-28</time>
+                <time title="修改时间：2023-06-29 08:44:49" itemprop="dateModified" datetime="2023-06-29T08:44:49+08:00">2023-06-29</time>
               </span>
 
           
@@ -251,6 +251,8 @@
       
         <h1 id="Nikto安装配置与使用"><a href="#Nikto安装配置与使用" class="headerlink" title="Nikto安装配置与使用"></a>Nikto安装配置与使用</h1><p>一、实验简介</p>
 <p>本实验旨在使用Nikto工具对校园防火墙和系统进行漏洞扫描和测试。Nikto是一款常用的开源Web服务器扫描工具，用于发现Web应用程序中的安全漏洞和配置错误。通过使用Nikto，可以帮助评估校园网络中防火墙和系统的安全性，并发现潜在的漏洞和风险。</p>
+<span id="more"></span>
+
 <p>实验步骤：</p>
 <p>1.安装Nikto工具：确保系统上已经安装了Nikto工具。也可以从Nikto的官方网站（<a target="_blank" rel="noopener" href="https://cirt.net/Nikto2%EF%BC%89%E4%B8%8A%E8%8E%B7%E5%8F%96%E6%9C%80%E6%96%B0%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%B9%B6%E6%8C%89%E7%85%A7%E5%85%B6%E6%8F%90%E4%BE%9B%E7%9A%84%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E3%80%82%E6%88%91%E8%BF%99%E9%87%8C%E6%98%AFkali%E8%87%AA%E5%B8%A6%E5%B7%A5%E5%85%B7%E3%80%82">https://cirt.net/Nikto2）上获取最新的软件包并按照其提供的安装说明进行安装。我这里是kali自带工具。</a></p>
 <p>2.配置扫描目标：确定您要扫描和测试的校园防火墙和系统的IP地址或域名。</p>

@@ -6,7 +6,7 @@
   <link href="https://gloam-knight.github.io/atom.xml" rel="self"/>
   
   <link href="https://gloam-knight.github.io/"/>
-  <updated>2023-06-28T15:24:09.926Z</updated>
+  <updated>2023-06-29T00:41:01.493Z</updated>
   <id>https://gloam-knight.github.io/</id>
   
   <author>
@@ -21,14 +21,17 @@
     <link href="https://gloam-knight.github.io/2023/06/25/Nmap%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
     <id>https://gloam-knight.github.io/2023/06/25/Nmap%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
     <published>2023-06-24T16:00:00.000Z</published>
-    <updated>2023-06-28T15:24:09.926Z</updated>
+    <updated>2023-06-29T00:41:01.493Z</updated>
     
     
-      
-      
     <summary type="html">&lt;h1 id=&quot;Nmap安装配置与使用&quot;&gt;&lt;a href=&quot;#Nmap安装配置与使用&quot; class=&quot;headerlink&quot; title=&quot;Nmap安装配置与使用&quot;&gt;&lt;/a&gt;Nmap安装配置与使用&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;
-&lt;p&gt;本实验旨在使用Nmap工具对校园网系统进</summary>
-      
+&lt;p&gt;本实验旨在使用Nmap工具对校园网系统进行端口扫描，以确定校园网中各主机的端口状态。端口扫描是一种常用的网络安全测试方法，用于发现主机上开放的网络服务和应用程序。&lt;/p&gt;
+&lt;p&gt;Nmap（Network Mapper）是一个开源的网络扫描和安全评估工具，广泛用于网络发现、服务和版本探测、漏洞检测等方面。通过使用Nmap，我们可以快速扫描校园网中的主机，并获取关于端口开放情况的信息。&lt;/p&gt;
+&lt;p&gt;在本实验中，将按照以下步骤进行校园网端口扫描：&lt;/p&gt;
+&lt;p&gt;1、准备环境：确保实验环境中已经安装了Nmap工具，并确保与校园网系统处于相同的网络环境中。&lt;/p&gt;
+&lt;p&gt;2、选择扫描目标：确定要扫描的目标范围，可以是整个校园网或特定的IP地址范围。&lt;/p&gt;
+&lt;p&gt;3、运行Nmap扫描：使用合适的命令行参数和目标选项，在终端中运行Nmap扫描命令。&lt;/p&gt;
+&lt;p&gt;4、分析扫描结果：Nmap扫描完成后，将生成一个扫描报告。在报告中，可以查看每个主机的开放端口列表、服务版本信息等。根据扫描结果，可以进一步分析校园网系统的端口状态和可能的安全风险。&lt;/p&gt;</summary>
     
     
     
@@ -42,14 +45,11 @@
     <link href="https://gloam-knight.github.io/2023/06/25/Nikto%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
     <id>https://gloam-knight.github.io/2023/06/25/Nikto%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
     <published>2023-06-24T16:00:00.000Z</published>
-    <updated>2023-06-28T15:38:52.925Z</updated>
+    <updated>2023-06-29T00:44:49.124Z</updated>
     
     
-      
-      
     <summary type="html">&lt;h1 id=&quot;Nikto安装配置与使用&quot;&gt;&lt;a href=&quot;#Nikto安装配置与使用&quot; class=&quot;headerlink&quot; title=&quot;Nikto安装配置与使用&quot;&gt;&lt;/a&gt;Nikto安装配置与使用&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;
-&lt;p&gt;本实验旨在使用Nikto工具对校</summary>
-      
+&lt;p&gt;本实验旨在使用Nikto工具对校园防火墙和系统进行漏洞扫描和测试。Nikto是一款常用的开源Web服务器扫描工具，用于发现Web应用程序中的安全漏洞和配置错误。通过使用Nikto，可以帮助评估校园网络中防火墙和系统的安全性，并发现潜在的漏洞和风险。&lt;/p&gt;</summary>
     
     
     
@@ -63,13 +63,11 @@
     <link href="https://gloam-knight.github.io/2023/06/25/iptables%E9%98%B2DDOS%E6%94%BB%E5%87%BB%E9%85%8D%E7%BD%AE/"/>
     <id>https://gloam-knight.github.io/2023/06/25/iptables%E9%98%B2DDOS%E6%94%BB%E5%87%BB%E9%85%8D%E7%BD%AE/</id>
     <published>2023-06-24T16:00:00.000Z</published>
-    <updated>2023-06-28T15:32:28.146Z</updated>
+    <updated>2023-06-29T00:44:38.736Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;h1 id=&quot;iptables防DDOS攻击配置&quot;&gt;&lt;a href=&quot;#iptables防DDOS攻击配置&quot; class=&quot;headerlink&quot; title=&quot;iptables防DDOS攻击配置&quot;&gt;&lt;/a&gt;iptables防DDOS攻击配置&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;</summary>
-      
+    <summary type="html">&lt;h1 id=&quot;iptables防DDOS攻击配置&quot;&gt;&lt;a href=&quot;#iptables防DDOS攻击配置&quot; class=&quot;headerlink&quot; title=&quot;iptables防DDOS攻击配置&quot;&gt;&lt;/a&gt;iptables防DDOS攻击配置&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;
+&lt;p&gt;本实验旨在演示如何使用CentOS防火墙iptables配置来抵御DDOS（分布式拒绝服务）攻击。实验中，我们将模拟攻击者使用Kali Linux对目标CentOS服务器进行DDOS攻击，然后通过配置iptables规则来减轻和阻止攻击流量。&lt;/p&gt;</summary>
     
     
     
@@ -83,14 +81,12 @@
     <link href="https://gloam-knight.github.io/2023/06/25/iptables%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
     <id>https://gloam-knight.github.io/2023/06/25/iptables%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
     <published>2023-06-24T16:00:00.000Z</published>
-    <updated>2023-06-28T15:43:48.712Z</updated>
+    <updated>2023-06-29T00:44:29.358Z</updated>
     
     
-      
-      
     <summary type="html">&lt;h1 id=&quot;iptables安装配置与使用&quot;&gt;&lt;a href=&quot;#iptables安装配置与使用&quot; class=&quot;headerlink&quot; title=&quot;iptables安装配置与使用&quot;&gt;&lt;/a&gt;iptables安装配置与使用&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;
-&lt;p&gt;本实验旨</summary>
-      
+&lt;p&gt;本实验旨在介绍iptables工具的安装、配置和基本使用，以帮助我们了解如何设置和管理防火墙规则。&lt;/p&gt;
+&lt;p&gt;这里虽然kali本身自带iptables防火墙，但为了后续实验的便捷性，这里我新装了一个centos系统，用这个新的系统安装iptables防火墙。&lt;/p&gt;</summary>
     
     
     
@@ -104,13 +100,12 @@
     <link href="https://gloam-knight.github.io/2023/06/22/Chatgpt%E6%8A%A5%E9%94%99/"/>
     <id>https://gloam-knight.github.io/2023/06/22/Chatgpt%E6%8A%A5%E9%94%99/</id>
     <published>2023-06-21T16:00:00.000Z</published>
-    <updated>2023-06-26T02:47:29.458Z</updated>
+    <updated>2023-06-29T00:44:12.491Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;Chatgpt无法访问问题&quot;&gt;&lt;a href=&quot;#Chatgpt无法访问问题&quot; class=&quot;headerlink&quot; title=&quot;Chatgpt无法访问问题&quot;&gt;&lt;/a&gt;Chatgpt无法访问问题&lt;/h2&gt;&lt;p&gt;Chatgpt也算我半个老师了，帮我解决了不少问题。</summary>
-      
+    <summary type="html">&lt;h2 id=&quot;Chatgpt无法访问问题&quot;&gt;&lt;a href=&quot;#Chatgpt无法访问问题&quot; class=&quot;headerlink&quot; title=&quot;Chatgpt无法访问问题&quot;&gt;&lt;/a&gt;Chatgpt无法访问问题&lt;/h2&gt;&lt;p&gt;Chatgpt也算我半个老师了，帮我解决了不少问题。&lt;/p&gt;
+&lt;p&gt;某天重装系统，重新下载Google，当登录网站时，浏览器出现一下情况：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../image/Chatgpt1.png&quot; alt=&quot;Chatgpt1.png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -126,13 +121,11 @@
     <link href="https://gloam-knight.github.io/2023/06/20/Python%E5%AE%89%E8%A3%85/"/>
     <id>https://gloam-knight.github.io/2023/06/20/Python%E5%AE%89%E8%A3%85/</id>
     <published>2023-06-19T16:00:00.000Z</published>
-    <updated>2023-06-26T02:48:02.448Z</updated>
+    <updated>2023-06-29T00:44:58.743Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Python安装&quot;&gt;&lt;a href=&quot;#Python安装&quot; class=&quot;headerlink&quot; title=&quot;Python安装&quot;&gt;&lt;/a&gt;Python安装&lt;/h1&gt;&lt;p&gt;因为有些工具只能用python2，而有的工具得用python3运行。所以我准备在win10里</summary>
-      
+    <summary type="html">&lt;h1 id=&quot;Python安装&quot;&gt;&lt;a href=&quot;#Python安装&quot; class=&quot;headerlink&quot; title=&quot;Python安装&quot;&gt;&lt;/a&gt;Python安装&lt;/h1&gt;&lt;p&gt;因为有些工具只能用python2，而有的工具得用python3运行。所以我准备在win10里同时装这两个，而且CSDN上也正好有这类的文章。但是！，可能因为时效性，安装过程中出了大大小小的问题，就没有成功，就很烦! &lt;/p&gt;
+&lt;p&gt;最近刚把电脑系统重装完，也把python2和python3下载好了。下面记录一下我安装的过程。&lt;/p&gt;</summary>
     
     
     
@@ -142,20 +135,19 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://gloam-knight.github.io/2023/06/19/hello-world/"/>
-    <id>https://gloam-knight.github.io/2023/06/19/hello-world/</id>
-    <published>2023-06-19T13:50:54.335Z</published>
-    <updated>2023-06-04T02:06:45.075Z</updated>
+    <title>hexo命令</title>
+    <link href="https://gloam-knight.github.io/2023/06/06/hexo%E5%91%BD%E4%BB%A4/"/>
+    <id>https://gloam-knight.github.io/2023/06/06/hexo%E5%91%BD%E4%BB%A4/</id>
+    <published>2023-06-05T16:00:00.000Z</published>
+    <updated>2023-06-29T01:27:45.023Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
+    <summary type="html">Hexo 是一个非常流行的静态网站生成器，它使用 Markdown 来编写内容，并将其转换为静态 HTML 页面。以下是一些常用的 Hexo 命令</summary>
     
     
     
+    
+    <category term="python" scheme="https://gloam-knight.github.io/tags/python/"/>
     
   </entry>
   
@@ -164,14 +156,13 @@
     <link href="https://gloam-knight.github.io/2023/06/04/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
     <id>https://gloam-knight.github.io/2023/06/04/%E4%BA%91%E8%AE%A1%E7%AE%97/</id>
     <published>2023-06-04T04:59:00.000Z</published>
-    <updated>2023-06-08T16:46:03.825Z</updated>
+    <updated>2023-06-29T01:12:51.544Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;h4 id=&quot;云计算的公共特征：&quot;&gt;&lt;a href=&quot;#云计算的公共特征：&quot; class=&quot;headerlink&quot; title=&quot;云计算的公共特征：&quot;&gt;&lt;/a&gt;云计算的公共特征：&lt;/h4&gt;&lt;p&gt;1．弹性伸缩 2．快速部署 3．资源抽象 4．按用量收费 5．宽带访问&lt;/p&gt;
-&lt;h</summary>
-      
+    <summary type="html">云计算是一种基于互联网的计算模式，通过集成和共享计算资源，为用户提供灵活、可扩展和按需的计算服务。它以虚拟化技术为基础，通过将计算资源（如服务器、存储和网络）提供给用户，使其能够根据需要快速获取和使用计算能力，而无需购买、配置和维护自己的物理设备。
+
+云计算作为一种现代化的计算模式，正在改变着人们对计算资源的获取和使用方式，为用户提供了更加灵活、高效和可靠的计算服务。它在推动数字化转型、促进创新和提升竞争力方面发挥着重要作用，成为当今信息技术领域的核心。
+</summary>
     
     
     
@@ -185,13 +176,10 @@
     <link href="https://gloam-knight.github.io/2023/05/20/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
     <id>https://gloam-knight.github.io/2023/05/20/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</id>
     <published>2023-05-19T16:00:00.000Z</published>
-    <updated>2023-06-22T12:10:47.762Z</updated>
+    <updated>2023-06-29T00:57:53.262Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;h1 id=&quot;信息收集&quot;&gt;&lt;a href=&quot;#信息收集&quot; class=&quot;headerlink&quot; title=&quot;信息收集&quot;&gt;&lt;/a&gt;信息收集&lt;/h1&gt;&lt;h4 id=&quot;1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等&quot;&gt;&lt;a href=&quot;#1-Web架构-语言-</summary>
-      
+    <summary type="html">在渗透测试中，信息收集是一项至关重要的任务，它旨在获取与目标系统、网络或应用程序相关的有价值的信息。信息收集阶段是渗透测试的基础，它为后续的攻击和漏洞利用提供了必要的背景和依据。通过仔细收集和分析目标的各种信息，渗透测试人员可以识别目标的薄弱环节，从而更好地规划和执行后续的攻击步骤。</summary>
     
     
     

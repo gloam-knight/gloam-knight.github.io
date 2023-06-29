@@ -4,8 +4,10 @@
     <title>Chatgpt报错</title>
     <url>/2023/06/22/Chatgpt%E6%8A%A5%E9%94%99/</url>
     <content><![CDATA[<h2 id="Chatgpt无法访问问题"><a href="#Chatgpt无法访问问题" class="headerlink" title="Chatgpt无法访问问题"></a>Chatgpt无法访问问题</h2><p>Chatgpt也算我半个老师了，帮我解决了不少问题。</p>
-<p>某天重装系统，重新下载Google，当登录网站时：</p>
+<p>某天重装系统，重新下载Google，当登录网站时，浏览器出现一下情况：</p>
 <p><img src="/../image/Chatgpt1.png" alt="Chatgpt1.png"></p>
+<span id="more"></span>
+
 <h4 id="有问题就解决问题-lt-很乐观-gt"><a href="#有问题就解决问题-lt-很乐观-gt" class="headerlink" title="有问题就解决问题&lt;很乐观&gt;"></a>有问题就解决问题&lt;很乐观&gt;</h4><p>网上查了不少资料，协议不支持，就去加其他协议。</p>
 <p>根据文章所说，勾选了两外三个，结果是失败了。</p>
 <p><img src="/../image/Chatgpt2.png" alt="Chatgpt2.png"></p>
@@ -48,6 +50,8 @@
 <p>2、选择扫描目标：确定要扫描的目标范围，可以是整个校园网或特定的IP地址范围。</p>
 <p>3、运行Nmap扫描：使用合适的命令行参数和目标选项，在终端中运行Nmap扫描命令。</p>
 <p>4、分析扫描结果：Nmap扫描完成后，将生成一个扫描报告。在报告中，可以查看每个主机的开放端口列表、服务版本信息等。根据扫描结果，可以进一步分析校园网系统的端口状态和可能的安全风险。</p>
+<span id="more"></span>
+
 <p>二、实验配置命令</p>
 <p>1.扫描单个目标主机：nmap &lt;目标主机&gt;</p>
 <p>2.扫描多个目标主机：nmap &lt;目标主机1&gt; &lt;目标主机2&gt; …</p>
@@ -78,6 +82,8 @@
     <url>/2023/06/25/Nikto%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="Nikto安装配置与使用"><a href="#Nikto安装配置与使用" class="headerlink" title="Nikto安装配置与使用"></a>Nikto安装配置与使用</h1><p>一、实验简介</p>
 <p>本实验旨在使用Nikto工具对校园防火墙和系统进行漏洞扫描和测试。Nikto是一款常用的开源Web服务器扫描工具，用于发现Web应用程序中的安全漏洞和配置错误。通过使用Nikto，可以帮助评估校园网络中防火墙和系统的安全性，并发现潜在的漏洞和风险。</p>
+<span id="more"></span>
+
 <p>实验步骤：</p>
 <p>1.安装Nikto工具：确保系统上已经安装了Nikto工具。也可以从Nikto的官方网站（<a href="https://cirt.net/Nikto2%EF%BC%89%E4%B8%8A%E8%8E%B7%E5%8F%96%E6%9C%80%E6%96%B0%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%B9%B6%E6%8C%89%E7%85%A7%E5%85%B6%E6%8F%90%E4%BE%9B%E7%9A%84%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E3%80%82%E6%88%91%E8%BF%99%E9%87%8C%E6%98%AFkali%E8%87%AA%E5%B8%A6%E5%B7%A5%E5%85%B7%E3%80%82">https://cirt.net/Nikto2）上获取最新的软件包并按照其提供的安装说明进行安装。我这里是kali自带工具。</a></p>
 <p>2.配置扫描目标：确定您要扫描和测试的校园防火墙和系统的IP地址或域名。</p>
@@ -122,6 +128,8 @@
     <url>/2023/06/20/Python%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<h1 id="Python安装"><a href="#Python安装" class="headerlink" title="Python安装"></a>Python安装</h1><p>因为有些工具只能用python2，而有的工具得用python3运行。所以我准备在win10里同时装这两个，而且CSDN上也正好有这类的文章。但是！，可能因为时效性，安装过程中出了大大小小的问题，就没有成功，就很烦! </p>
 <p>最近刚把电脑系统重装完，也把python2和python3下载好了。下面记录一下我安装的过程。</p>
+<span id="more"></span>
+
 <p>1、打开<a href="http://www.python.org进入官网下载，点击Downloads->Windows">www.python.org进入官网下载，点击Downloads-&gt;Windows</a></p>
 <p><img src="/../image/image-20230622190955743.png" alt="image-20230622190955743"></p>
 <p>然后就可以看到版本信息了</p>
@@ -171,28 +179,12 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/06/19/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>iptables防DDOS攻击配置</title>
     <url>/2023/06/25/iptables%E9%98%B2DDOS%E6%94%BB%E5%87%BB%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="iptables防DDOS攻击配置"><a href="#iptables防DDOS攻击配置" class="headerlink" title="iptables防DDOS攻击配置"></a>iptables防DDOS攻击配置</h1><p>一、实验简介</p>
 <p>本实验旨在演示如何使用CentOS防火墙iptables配置来抵御DDOS（分布式拒绝服务）攻击。实验中，我们将模拟攻击者使用Kali Linux对目标CentOS服务器进行DDOS攻击，然后通过配置iptables规则来减轻和阻止攻击流量。</p>
+ <span id="more"></span>
+
 <p>二、实验配置命令</p>
 <p><em><strong>*Iptables相关命令：*</strong></em></p>
 <p>查看当前iptables规则：iptables -L</p>
@@ -252,6 +244,8 @@
     <content><![CDATA[<h1 id="iptables安装配置与使用"><a href="#iptables安装配置与使用" class="headerlink" title="iptables安装配置与使用"></a>iptables安装配置与使用</h1><p>一、实验简介</p>
 <p>本实验旨在介绍iptables工具的安装、配置和基本使用，以帮助我们了解如何设置和管理防火墙规则。</p>
 <p>这里虽然kali本身自带iptables防火墙，但为了后续实验的便捷性，这里我新装了一个centos系统，用这个新的系统安装iptables防火墙。</p>
+ <span id="more"></span>
+
 <p>二、实验配置命令</p>
 <p>安装iptables:</p>
 <p>首先，使用适用于您的Linux发行版的包管理器（如apt、yum、dnf等）安装iptables工具。</p>
@@ -374,7 +368,18 @@
   <entry>
     <title>信息收集</title>
     <url>/2023/05/20/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h1><h4 id="1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等"><a href="#1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等" class="headerlink" title="1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等"></a>1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等</h4><h4 id="2-Web源码-CMS开源-amp-闭源售卖-amp-自主研发等"><a href="#2-Web源码-CMS开源-amp-闭源售卖-amp-自主研发等" class="headerlink" title="2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等"></a>2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等</h4><p>web源码：互站网 fofa搜**源码</p>
+    <content><![CDATA[<h1 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h1><p>在信息收集阶段：</p>
+<ol>
+<li>开放端口和服务识别：通过扫描目标系统的开放端口，渗透测试人员可以确定目标主机上运行的服务和应用程序。这些信息可以帮助他们了解目标系统的架构和配置，从而识别潜在的漏洞和攻击面。</li>
+<li>域名和子域名枚举：通过使用域名枚举工具和搜索引擎，渗透测试人员可以获取与目标组织相关的域名和子域名信息。这些信息可以揭示目标组织的互联网足迹，进一步帮助他们确定可能存在的漏洞和攻击路径。</li>
+<li>WHOIS查询和网络架构分析：通过进行WHOIS查询和分析目标网络的结构，渗透测试人员可以了解目标组织的注册信息、IP地址分配情况以及网络拓扑结构。这些信息对于识别潜在的攻击目标和漏洞非常有价值。</li>
+<li>社交工程和足迹分析：渗透测试人员会利用社交工程技术和足迹分析方法来获取目标个人或组织的公开信息，包括员工姓名、联系方式、社交媒体账号等。这些信息可以被用于构建针对目标的定向攻击和欺骗手段。</li>
+<li>操作系统和应用程序指纹识别：通过分析目标系统和应用程序的指纹信息，渗透测试人员可以了解其所使用的操作系统、软件版本以及可能存在的已知漏洞。这有助于确定攻击的方向和方法。</li>
+</ol>
+<p>通过信息收集阶段的细致工作，渗透测试人员能够建立起对目标系统的深入了解，识别潜在的漏洞和弱点，并为后续的攻击阶段做好准备。然而，渗透测试人员在执行信息收集时需要遵守法律和道德规范，确保其活动仅限于合法授权的范围内，以保护目标组织的利益和数据安全。</p>
+<p>通过信息收集的结果，渗透测试人员可以为客户提供详尽的报告，指出目标系统的薄弱环节，并提供相应的建议和解决方案，以帮助客户加固网络安全防线，保护其敏感信息和资产的安全。</p>
+<p>总结：信息收集是渗透测试中至关重要的一环，通过仔细收集和分析目标的各种信息，渗透测试人员能够揭示目标的薄弱环节，为后续的攻击和漏洞利用提供基础。然而，渗透测试人员在执行信息收集时需要遵守法律和道德规范，确保其活动合法、合规。最终，通过信息收集的结果，渗透测试人员能够为客户提供全面的报告和建议，帮助其提升网络安全防护水平。</p>
+<h4 id="1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等"><a href="#1-Web架构-语言-amp-中间件-amp-数据库-amp-系统等" class="headerlink" title="1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等"></a>1.Web架构-语言&amp;中间件&amp;数据库&amp;系统等</h4><h4 id="2-Web源码-CMS开源-amp-闭源售卖-amp-自主研发等"><a href="#2-Web源码-CMS开源-amp-闭源售卖-amp-自主研发等" class="headerlink" title="2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等"></a>2.Web源码-CMS开源&amp;闭源售卖&amp;自主研发等</h4><p>web源码：互站网 fofa搜**源码</p>
 <p>一个网站多个域名</p>
 <p>备案查询</p>
 <h4 id="3-Web源码获取-泄露安全-amp-资源监控-amp-其他等"><a href="#3-Web源码获取-泄露安全-amp-资源监控-amp-其他等" class="headerlink" title="3.Web源码获取-泄露安全&amp;资源监控&amp;其他等"></a>3.Web源码获取-泄露安全&amp;资源监控&amp;其他等</h4><h4 id="4-Web域名-子域名-amp-相似域名-amp-反查域名-amp-旁注等"><a href="#4-Web域名-子域名-amp-相似域名-amp-反查域名-amp-旁注等" class="headerlink" title="4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等"></a>4.Web域名-子域名&amp;相似域名&amp;反查域名&amp;旁注等</h4><p>#信息点：</p>
@@ -442,6 +447,74 @@
 ]]></content>
       <tags>
         <tag>信息收集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo命令</title>
+    <url>/2023/06/06/hexo%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<ol>
+<li><p><strong>hexo new &lt;title&gt;</strong>: 创建一篇新的文章。</p>
+<p><code>hexo new &quot;Hello World&quot;</code> </p>
+<p>将创建一个名为 “Hello World” 的新文章。</p>
+</li>
+<li><p><strong>hexo generate</strong> (简写为 <code>hexo g</code>): </p>
+<p>生成静态页面。该命令将会根据你的文章和主题生成静态 HTML 页面。</p>
+</li>
+<li><p><strong>hexo server</strong> (简写为 <code>hexo s</code>): 启动本地服务器。</p>
+<p>该命令会在本地预览生成的网站，可以通过浏览器访问 <code>http://localhost:4000</code> 来查看。</p>
+</li>
+<li><p><strong>hexo deploy</strong> (简写为 <code>hexo d</code>): 部署网站。</p>
+<p>该命令将生成的静态页面部署到指定的服务器或托管平台，如 GitHub Pages、Netlify 等。</p>
+</li>
+<li><p><strong>hexo clean</strong>: 清除缓存文件。</p>
+<p>该命令会清除 Hexo 生成网站时产生的缓存文件，通常在重新生成网站之前使用。</p>
+</li>
+<li><p><strong>hexo list &lt;type&gt;</strong>: 列出文章、页面或标签。</p>
+<p>例：<code>hexo list post</code> 将列出所有的文章。</p>
+</li>
+<li><p><strong>hexo help</strong>: 显示 Hexo 命令的帮助信息。</p>
+<p>该命令会列出可用的命令及其说明。</p>
+</li>
+<li><p><strong>hexo publish &lt;title&gt;</strong>: </p>
+<p>将草稿（Draft）发布为正式文章。使用该命令可以将状态为草稿的文章发布到网站上。</p>
+</li>
+<li><p><strong>hexo unpublish &lt;title&gt;</strong>: </p>
+<p>将已发布的文章转为草稿状态。使用该命令可以将已发布的文章设为草稿，不再在网站上显示。</p>
+</li>
+<li><p><strong>hexo page &lt;layout&gt; &lt;title&gt;</strong>: 创建一篇新的页面。</p>
+<p>可以根据指定的布局模板（layout）创建一个新的页面，如 <code>hexo page about &quot;About Me&quot;</code>。</p>
+</li>
+<li><p><strong>hexo server -p &lt;port&gt;</strong>: 在指定端口启动本地服务器。</p>
+<p>除了默认的端口 4000 外，你可以通过 <code>-p</code> 参数指定其他端口号，例如 <code>hexo server -p 8888</code>。</p>
+</li>
+<li><p><strong>hexo clean &amp;&amp; hexo generate</strong>: 清除缓存并生成静态页面。</p>
+<p>这是一个常用的组合命令，用于在生成网站之前先清除缓存文件。</p>
+</li>
+<li><p><strong>hexo deploy –generate</strong>: 部署网站前先生成静态页面。</p>
+<p>使用该命令可以在部署网站之前先生成静态页面，确保最新的页面内容被部署。</p>
+</li>
+<li><p><strong>hexo migrate &lt;type&gt;</strong>: 从其他平台或系统迁移数据。</p>
+<p>该命令用于从其他平台（如WordPress、Jekyll等）或系统中导入数据到 Hexo 中，方便迁移现有内容。</p>
+</li>
+<li><p><strong>hexo version</strong>: 显示 Hexo 的版本信息。该命令可以查看当前安装的 Hexo 版本号。</p>
+</li>
+</ol>
+<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
 </search>
