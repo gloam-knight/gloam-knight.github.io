@@ -6,7 +6,7 @@
   <link href="https://gloam-knight.github.io/atom.xml" rel="self"/>
   
   <link href="https://gloam-knight.github.io/"/>
-  <updated>2023-06-29T00:41:01.493Z</updated>
+  <updated>2023-06-29T00:44:49.124Z</updated>
   <id>https://gloam-knight.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nikto安装配置与使用</title>
+    <link href="https://gloam-knight.github.io/2023/06/25/Nikto%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <id>https://gloam-knight.github.io/2023/06/25/Nikto%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
+    <published>2023-06-24T16:00:00.000Z</published>
+    <updated>2023-06-29T00:44:49.124Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Nikto安装配置与使用&quot;&gt;&lt;a href=&quot;#Nikto安装配置与使用&quot; class=&quot;headerlink&quot; title=&quot;Nikto安装配置与使用&quot;&gt;&lt;/a&gt;Nikto安装配置与使用&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;
+&lt;p&gt;本实验旨在使用Nikto工具对校园防火墙和系统进行漏洞扫描和测试。Nikto是一款常用的开源Web服务器扫描工具，用于发现Web应用程序中的安全漏洞和配置错误。通过使用Nikto，可以帮助评估校园网络中防火墙和系统的安全性，并发现潜在的漏洞和风险。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="网络安全实验" scheme="https://gloam-knight.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>Nmap安装配置与使用</title>
@@ -41,15 +59,16 @@
   </entry>
   
   <entry>
-    <title>Nikto安装配置与使用</title>
-    <link href="https://gloam-knight.github.io/2023/06/25/Nikto%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
-    <id>https://gloam-knight.github.io/2023/06/25/Nikto%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
+    <title>iptables安装配置与使用</title>
+    <link href="https://gloam-knight.github.io/2023/06/25/iptables%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <id>https://gloam-knight.github.io/2023/06/25/iptables%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
     <published>2023-06-24T16:00:00.000Z</published>
-    <updated>2023-06-29T00:44:49.124Z</updated>
+    <updated>2023-06-29T00:44:29.358Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;Nikto安装配置与使用&quot;&gt;&lt;a href=&quot;#Nikto安装配置与使用&quot; class=&quot;headerlink&quot; title=&quot;Nikto安装配置与使用&quot;&gt;&lt;/a&gt;Nikto安装配置与使用&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;
-&lt;p&gt;本实验旨在使用Nikto工具对校园防火墙和系统进行漏洞扫描和测试。Nikto是一款常用的开源Web服务器扫描工具，用于发现Web应用程序中的安全漏洞和配置错误。通过使用Nikto，可以帮助评估校园网络中防火墙和系统的安全性，并发现潜在的漏洞和风险。&lt;/p&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;iptables安装配置与使用&quot;&gt;&lt;a href=&quot;#iptables安装配置与使用&quot; class=&quot;headerlink&quot; title=&quot;iptables安装配置与使用&quot;&gt;&lt;/a&gt;iptables安装配置与使用&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;
+&lt;p&gt;本实验旨在介绍iptables工具的安装、配置和基本使用，以帮助我们了解如何设置和管理防火墙规则。&lt;/p&gt;
+&lt;p&gt;这里虽然kali本身自带iptables防火墙，但为了后续实验的便捷性，这里我新装了一个centos系统，用这个新的系统安装iptables防火墙。&lt;/p&gt;</summary>
     
     
     
@@ -68,25 +87,6 @@
     
     <summary type="html">&lt;h1 id=&quot;iptables防DDOS攻击配置&quot;&gt;&lt;a href=&quot;#iptables防DDOS攻击配置&quot; class=&quot;headerlink&quot; title=&quot;iptables防DDOS攻击配置&quot;&gt;&lt;/a&gt;iptables防DDOS攻击配置&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;
 &lt;p&gt;本实验旨在演示如何使用CentOS防火墙iptables配置来抵御DDOS（分布式拒绝服务）攻击。实验中，我们将模拟攻击者使用Kali Linux对目标CentOS服务器进行DDOS攻击，然后通过配置iptables规则来减轻和阻止攻击流量。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="网络安全实验" scheme="https://gloam-knight.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%9E%E9%AA%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iptables安装配置与使用</title>
-    <link href="https://gloam-knight.github.io/2023/06/25/iptables%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
-    <id>https://gloam-knight.github.io/2023/06/25/iptables%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
-    <published>2023-06-24T16:00:00.000Z</published>
-    <updated>2023-06-29T00:44:29.358Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;iptables安装配置与使用&quot;&gt;&lt;a href=&quot;#iptables安装配置与使用&quot; class=&quot;headerlink&quot; title=&quot;iptables安装配置与使用&quot;&gt;&lt;/a&gt;iptables安装配置与使用&lt;/h1&gt;&lt;p&gt;一、实验简介&lt;/p&gt;
-&lt;p&gt;本实验旨在介绍iptables工具的安装、配置和基本使用，以帮助我们了解如何设置和管理防火墙规则。&lt;/p&gt;
-&lt;p&gt;这里虽然kali本身自带iptables防火墙，但为了后续实验的便捷性，这里我新装了一个centos系统，用这个新的系统安装iptables防火墙。&lt;/p&gt;</summary>
     
     
     
@@ -126,23 +126,6 @@
     
     <summary type="html">&lt;h1 id=&quot;Python安装&quot;&gt;&lt;a href=&quot;#Python安装&quot; class=&quot;headerlink&quot; title=&quot;Python安装&quot;&gt;&lt;/a&gt;Python安装&lt;/h1&gt;&lt;p&gt;因为有些工具只能用python2，而有的工具得用python3运行。所以我准备在win10里同时装这两个，而且CSDN上也正好有这类的文章。但是！，可能因为时效性，安装过程中出了大大小小的问题，就没有成功，就很烦! &lt;/p&gt;
 &lt;p&gt;最近刚把电脑系统重装完，也把python2和python3下载好了。下面记录一下我安装的过程。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="python" scheme="https://gloam-knight.github.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo命令</title>
-    <link href="https://gloam-knight.github.io/2023/06/06/hexo%E5%91%BD%E4%BB%A4/"/>
-    <id>https://gloam-knight.github.io/2023/06/06/hexo%E5%91%BD%E4%BB%A4/</id>
-    <published>2023-06-05T16:00:00.000Z</published>
-    <updated>2023-06-29T01:27:45.023Z</updated>
-    
-    
-    <summary type="html">Hexo 是一个非常流行的静态网站生成器，它使用 Markdown 来编写内容，并将其转换为静态 HTML 页面。以下是一些常用的 Hexo 命令</summary>
     
     
     
